@@ -1,4 +1,9 @@
-ayout: single title: "Setting Up My New Personal Website!" date: 2025-06-21 18:00:00 -0700 categories: [Website, Jekyll, GitHub Pages] tags: [personal-website, github-pages, jekyll, minimal-mistakes]
+layout: single 
+title: "Setting Up My New Personal Website!" 
+date: 2025-06-21 18:00:00 -0700 categories: [Website, Jekyll, GitHub Pages] 
+tags: [personal-website, github-pages, jekyll, minimal-mistakes]
+
+
 Welcome to my brand new personal website! After some planning and a fresh start, I'm excited to launch this new online space for my work and thoughts.
 
 This site is powered by Jekyll and built on the highly versatile Minimal Mistakes theme. I chose this combination for its flexibility, robust features, and excellent support for GitHub Pages. My aim is to create a clean, modern, and informative platform to showcase my academic journey, research, projects, and insights.
