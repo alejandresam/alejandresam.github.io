@@ -5,12 +5,12 @@
 # features and then customize it to your liking.
 
 # Basic Site Information
-title: Alejandra Sam - Personal Portfolio
+title: Samantha Alejandre - Personal Portfolio
 tagline: "Your tagline here, e.g., Researcher | Developer | Designer"
 description: >- # this means to ignore newlines until "baseurl:"
   This is a personal portfolio website showcasing projects, research, and interests.
   It's built with Jekyll and the Minimal Mistakes theme, customized for a modern academic/personal look.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/about" # the subpath of your site, e.g. /blog
 url: "https://alejandresam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo name
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -29,7 +29,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your_email@example.com"
+      url: "mailto:alejandresam@g.ucla.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/alejandresam"
