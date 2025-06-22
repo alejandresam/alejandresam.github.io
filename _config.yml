@@ -23,7 +23,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for Git
 # Site Author Information
 author:
   name: "Alejandra Sam"
-  avatar: "/assets/images/bio-photo.jpg" # You'll need to add a photo here
+  avatar: "/assets/images/Samantha_headshot.jpg" # You'll need to add a photo here
   bio: "Brief bio or current role. E.g., PhD Student at University of California, Los Angeles."
   location: "Los Angeles, CA"
   links:
@@ -35,7 +35,7 @@ author:
       url: "https://github.com/alejandresam"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/yourprofile"
+      url: "https://www.linkedin.com/in/samanthaalejandre"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square" # Academicons are supported!
       url: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"
@@ -111,4 +111,29 @@ navigation:
   - title: "Blog"
     url: "/blog/"
   - title: "CV"
-    url: "/assets/cv/your_cv.pdf" # You'll need to upload your CV here
+    url: "/assets/cv/CV_Samantha_Alejandre.pdf" # You'll need to upload your CV here
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+      # Add these lines for header background and overlay on pages
+      header:
+        overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
+        overlay_filter: 0.5 # 50% opacity
+        # You can add a default overlay_image here too if you want all pages to have one
+        # overlay_image: /assets/images/header-banner.jpg
