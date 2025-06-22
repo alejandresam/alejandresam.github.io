@@ -136,4 +136,4 @@ defaults:
         overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
         overlay_filter: 0.5 # 50% opacity
         # You can add a default overlay_image here too if you want all pages to have one
-        # overlay_image: /assets/images/header-banner.jpg
+        overlay_image: /assets/images/banner.jpg
