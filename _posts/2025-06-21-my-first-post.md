@@ -1,10 +1,3 @@
---- # Add the closing --- for front matter
-layout: single # Corrected 'ayout' to 'layout'
-title: "Setting Up My New Personal Website!"
-date: 2025-06-21 18:00:00 -0700
-categories: [Website, Jekyll, GitHub Pages]
-tags: [personal-website, github-pages, jekyll, minimal-mistakes]
---- # Add the closing --- for front matter
 
 Welcome to my brand new personal website! After some planning and a fresh start, I'm excited to launch this new online space for my work and thoughts.
 
