@@ -1,0 +1,121 @@
+
+// Import Minimal Mistakes theme styles
+@import "minimal-mistakes";
+
+// Import your custom variables (must be imported AFTER minimal-mistakes for overrides to work)
+@import "custom/variables";
+
+// Custom styles for Alejandra Sam's website
+// Add your specific CSS overrides here to match the desired layout/aesthetics.
+
+// --- General Body & Typography ---
+body {
+  font-family: $body-font-family;
+  color: $body-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  color: #2c3e50; /* A slightly darker blue-grey for headings */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+// --- Header/Masthead Customization (similar to lyang36.github.io) ---
+.page__hero {
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 8em 0; // More vertical padding for a larger hero section
+  position: relative;
+  color: #fff; // Ensure text on hero image is white
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; // Ensure a minimum height for the hero section
+}
+
+.page__hero h1 {
+  font-size: 3em; // Larger font size for main heading
+  color: #fff; // White color for heading on the hero image
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for readability */
+}
+
+.page__hero p {
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Subtle shadow for readability */
+}
+
+// Ensure the profile picture in the hero is styled correctly
+.page__hero .author__avatar {
+  border: 5px solid rgba(255,255,255,0.8); // White border for avatar
+  box-shadow: 0 0 15px rgba(0,0,0,0.3); // Subtle shadow
+  width: 150px; // Set a fixed width
+  height: 150px; // Set a fixed height
+  object-fit: cover; // Ensure image covers the area
+  border-radius: 50%; // Make it perfectly round
+  margin-bottom: 1.5em;
+}
+
+// Adjust layout for smaller screens
+@media (max-width: 768px) {
+  .page__hero {
+    padding: 4em 0;
+    min-height: 300px;
+  }
+
+  .page__hero h1 {
+    font-size: 2em;
+  }
+}
+
+// --- Navigation Bar ---
+.masthead__inner-wrap {
+  max-width: 1200px; /* Adjust max-width of header content */
+}
+
+.site-title {
+  font-size: 1.8em; // Larger site title
+  font-weight: bold;
+}
+
+.masthead__menu a {
+  font-weight: 500; // Slightly bolder navigation links
+  text-transform: uppercase; // Uppercase links like lyang36.github.io
+}
+
+// --- Footer Styling ---
+.page__footer {
+  background-color: #2c3e50; // Darker footer background
+  color: #ecf0f1; // Lighter text color
+}
+
+.page__footer .wrapper p {
+  color: #bdc3c7; // Subtle text color in footer
+}
+
+// --- Author Profile (on pages other than home) ---
+.sidebar {
+  background-color: #f8f8f8; // Light background for sidebar
+  padding: 1.5em;
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); // Subtle shadow
+}
+
+// Custom styles inspired by caihanlin.com for main content area
+.page__content {
+  background-color: #ffffff; // White background for content
+  padding: 2em;
+  border-radius: 8px; // Rounded corners for content block
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08); // Subtle shadow
+  margin-top: 2em; // Space from header
+  margin-bottom: 2em;
+}
+
+.archive__item-title {
+  font-size: 1.8em; // Larger titles for blog posts/projects
+}

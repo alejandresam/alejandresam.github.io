@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://alejandresam.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alejandresam.github.io/" rel="alternate" type="text/html" /><updated>2025-06-22T16:25:04-07:00</updated><id>https://alejandresam.github.io/feed.xml</id><title type="html">Samantha Alejandre - Personal Portfolio</title><subtitle>This is a personal portfolio website showcasing projects, research, and interests in Machine Learning, Data Science, and Artificial Intelligence. It&apos;s built with Jekyll and the Minimal Mistakes theme, customized for a modern academic/personal look.</subtitle><author><name>Samantha Alejandre</name></author><entry><title type="html">My First Post</title><link href="https://alejandresam.github.io/my-first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2025-06-21T00:00:00-07:00</published><updated>2025-06-22T16:24:44-07:00</updated><id>https://alejandresam.github.io/my-first-post</id><content type="html" xml:base="https://alejandresam.github.io/my-first-post/"><![CDATA[<p>— # Add the closing — for front matter
+layout: single # Corrected ‘ayout’ to ‘layout’
+title: “Setting Up My New Personal Website!”
+date: 2025-06-21 18:00:00 -0700
+categories: [Website, Jekyll, GitHub Pages]
+tags: [personal-website, github-pages, jekyll, minimal-mistakes]
+— # Add the closing — for front matter</p>
+
+<p>Welcome to my brand new personal website! After some planning and a fresh start, I’m excited to launch this new online space for my work and thoughts.</p>
+
+<p>This site is powered by Jekyll and built on the highly versatile Minimal Mistakes theme. I chose this combination for its flexibility, robust features, and excellent support for GitHub Pages. My aim is to create a clean, modern, and informative platform to showcase my academic journey, research, projects, and insights.</p>
+
+<p>In the coming weeks, I plan to populate this site with:</p>
+
+<p>Details about my ongoing research in [Your Research Area].</p>
+
+<p>Showcases of personal coding projects.</p>
+
+<p>My publications, linking to relevant papers and preprints.</p>
+
+<p>Regular blog posts on topics ranging from [Topic 1] to [Topic 2].</p>
+
+<p>Stay tuned for more updates! This is just the beginning.</p>
+
+<p>This is a sample post. You can delete or edit it later.</p>]]></content><author><name>Samantha Alejandre</name></author><summary type="html"><![CDATA[— # Add the closing — for front matter layout: single # Corrected ‘ayout’ to ‘layout’ title: “Setting Up My New Personal Website!” date: 2025-06-21 18:00:00 -0700 categories: [Website, Jekyll, GitHub Pages] tags: [personal-website, github-pages, jekyll, minimal-mistakes] — # Add the closing — for front matter]]></summary></entry></feed>
