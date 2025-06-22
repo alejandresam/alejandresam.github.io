@@ -8,6 +8,12 @@ on:
 jobs:
   jekyll:
     runs-on: ubuntu-latest
+    # Add permissions for the GITHUB_TOKEN
+    permissions:
+      contents: write # This line grants write access to the repository contents
+      pages: write    # Recommended for GitHub Pages deployments
+      id-token: write # Recommended for OIDC authentication with Pages
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,3 +42,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site # The directory Jekyll outputs to
+          # Optional: Configure this action to use the GitHub Pages token
+          # You might not need this if `pages: write` above is sufficient,
+          # but some setups specifically require it for more secure deployment.
+          # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # If you're using a deploy key
+          # enable_html_check: false # Set to false to skip HTML checks if causing issues
