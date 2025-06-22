@@ -1,10 +1,14 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3" # Jekyll version
-gem "github-pages", group: :jekyll_plugins # Required for GitHub Pages compatibility
-source "https://rubygems.org"
-gem "minimal-mistakes-jekyll", "~> 4.26" # Match your remote theme version
-# Add other plugins you use here, e.g.:
+# Specify the Jekyll version that is compatible with Minimal Mistakes
+# Minimal Mistakes v4.x works well with Jekyll 3.x and 4.x.
+# Since you're using MM@4.26.2, Jekyll ~> 4.3 is a good choice.
+gem "jekyll", "~> 4.3"
+
+# Minimal Mistakes theme
+gem "minimal-mistakes-jekyll", "~> 4.26"
+
+# Add your plugins
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
@@ -12,10 +16,9 @@ gem "jekyll-feed"
 gem "jekyll-include-cache"
 gem "jekyll-remote-theme"
 gem "jekyll-seo-tag"
-gem "jekyll-last-modified-at" # The new plugin we added
-# If you're building locally, you might need additional gems not included in github-pages:
-# gem "minimal-mistakes-jekyll", "~> 4.26" # This line is NOT needed with `remote_theme`
-                                         # but useful if you want to fork the theme for heavy customization.
+gem "jekyll-last-modified-at"
 
-# To use academicons (for Google Scholar icon etc.)
-gem "jekyll-scholar" # Minimal Mistakes might include its own academicons, but this is good to have.
+# For local development:
+group :development do
+  gem "webrick" # Required for Jekyll 4.x on Ruby 3.x for local server
+end
