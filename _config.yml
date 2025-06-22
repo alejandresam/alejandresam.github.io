@@ -6,25 +6,25 @@
 
 # Basic Site Information
 title: Samantha Alejandre - Personal Portfolio
-tagline: "Your tagline here, e.g., Researcher | Developer | Designer"
+tagline: "Electrical & Computer Engineering MS Student | Machine Learning Researcher" # Updated tagline to be more descriptive
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a personal portfolio website showcasing projects, research, and interests.
+  This is a personal portfolio website showcasing projects, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.
   It's built with Jekyll and the Minimal Mistakes theme, customized for a modern academic/personal look.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://alejandresam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g., /blog
+url: "https://alejandresam.github.io" # the base hostname & protocol for your site, e.g., http://example.com
 repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo name
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Theme configuration (Minimal Mistakes specific)
-minimal_mistakes_skin: "default" # Possible values: "default", "air", "aqua", "contrast", "dark", "dirt", "external", "mint", "sunrise"
-                                 # We'll start with default and customize.
+minimal_mistakes_skin: "mint" # Possible values: "default", "air", "aqua", "contrast", "dark", "dirt", "external", "mint", "sunrise"
+                                 # We'll stick with "default" for now as you're overriding with custom CSS.
 remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
 author:
-  name: "Alejandra Sam"
-  avatar: "/assets/images/Samantha_headshot.jpg" # You'll need to add a photo here
-  bio: "Brief bio or current role. E.g., PhD Student at University of California, Los Angeles."
+  name: "Samantha Alejandre" # Changed name to Samantha Alejandre as per CV
+  avatar: "/assets/images/Samantha_headshot.jpg" # You'll need to add your photo here!
+  bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI." # Updated bio to be more specific
   location: "Los Angeles, CA"
   links:
     - label: "Email"
@@ -38,7 +38,7 @@ author:
       url: "https://www.linkedin.com/in/samanthaalejandre"
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square" # Academicons are supported!
-      url: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"
+      url: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" # IMPORTANT: Update YOUR_SCHOLAR_ID
     # Add other links as desired (e.g., Twitter, ResearchGate, personal website)
 
 # Build settings
@@ -55,6 +55,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme # Required for remote_theme on GitHub Pages
   - jekyll-seo-tag # For better SEO (search engine optimization)
+  - jekyll-last-modified-at # New plugin for displaying last modified date on posts/pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -76,6 +77,7 @@ exclude:
   - vendor/ruby/
 
 # Defaults
+# These are crucial for applying layouts and other settings automatically to your content.
 defaults:
   # _posts
   - scope:
@@ -88,17 +90,22 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+      last_modified_at: true # Enable last modified date for posts
+  # _pages (e.g., about.md, projects.md, blog.md, publications.md)
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "single"
       author_profile: true
+      header:
+        overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
+        overlay_filter: 0.5 # 50% opacity
+        overlay_image: /assets/images/banner.jpg # Ensure this image exists, or update the path
+      last_modified_at: true # Enable last modified date for pages
 
 # Header Navigation (main menu)
 # This will be your primary navigation bar.
-# We'll create these pages in the next steps.
 navigation:
   - title: "Home"
     url: "/"
@@ -111,29 +118,4 @@ navigation:
   - title: "Blog"
     url: "/blog/"
   - title: "CV"
-    url: "/assets/cv/CV_Samantha_Alejandre.pdf" # You'll need to upload your CV here
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single"
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
-      # Add these lines for header background and overlay on pages
-      header:
-        overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
-        overlay_filter: 0.5 # 50% opacity
-        # You can add a default overlay_image here too if you want all pages to have one
-        overlay_image: /assets/images/banner.jpg
+    url: "/assets/cv/CV_Samantha_Alejandre_Resume.pdf" # Make sure this path is correct and the file is uploaded.
