@@ -90,7 +90,7 @@ defaults:
       comments: true
       share: true
       related: true
-      last_modified_at: true # Enable last modified date for posts
+      #last_modified_at: true # Enable last modified date for posts
   # _pages (e.g., about.md, projects.md, blog.md, publications.md)
   - scope:
       path: ""
