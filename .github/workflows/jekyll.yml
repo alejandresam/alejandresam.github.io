@@ -1,0 +1,38 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main # Or 'master' if that's your default branch name for your repository
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Using a specific Ruby 3.x version (e.g., 3.2.x)
+          bundler-cache: true # Installs gems defined in Gemfile.lock
+
+      - name: Install Jekyll and dependencies
+        run: |
+          # The bundler-cache step above handles 'bundle install --path vendor/bundle'
+          # We just need to make sure Bundler itself is updated if needed
+          gem install bundler
+          # Ensure Jekyll is available via bundler
+          bundle config set --local path 'vendor/bundle' # Set bundle path
+          bundle install # Install gems based on Gemfile.lock
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build # --verbose can be added for more debugging info
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # Using a common action for deployment
+        if: github.ref == 'refs/heads/main' # Only deploy from your main branch
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site # The directory Jekyll outputs to
