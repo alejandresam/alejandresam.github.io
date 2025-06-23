@@ -18,7 +18,7 @@ timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_databas
 # Theme configuration (Minimal Mistakes specific)
 minimal_mistakes_skin: "mint" # Possible values: "default", "air", "aqua", "contrast", "dark", "dirt", "external", "mint", "sunrise"
                                  # We'll stick with "default" for now as you're overriding with custom CSS.
-remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
+#remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
 author:
