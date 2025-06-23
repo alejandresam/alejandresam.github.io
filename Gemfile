@@ -5,23 +5,9 @@ source "https://rubygems.org"
 # Since you're using MM@4.26.2, Jekyll ~> 4.3 is a good choice.
 gem "jekyll", "~> 4.3"
 
-# Minimal Mistakes theme
-gem "minimal-mistakes-jekyll", "~> 4.26"
 
 
 gem "github-pages", group: :jekyll_plugins
 
 # Add your plugins
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-feed"
-gem "jekyll-include-cache"
-gem "jekyll-remote-theme"
-gem "jekyll-seo-tag"
-gem "jekyll-last-modified-at"
-
-# For local development:
-group :development do
-  gem "webrick" # Required for Jekyll 4.x on Ruby 3.x for local server
-end
+gem "jekyll-scholar"
