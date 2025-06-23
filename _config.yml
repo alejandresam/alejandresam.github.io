@@ -90,32 +90,16 @@ defaults:
       comments: true
       share: true
       related: true
-      #last_modified_at: true # Enable last modified date for posts
-  # _pages (e.g., about.md, projects.md, blog.md, publications.md)
+  # _pages
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "single"
       author_profile: true
+      # Add these lines for header background and overlay on pages
       header:
         overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
         overlay_filter: 0.5 # 50% opacity
-        overlay_image: /assets/images/banner.jpg # Ensure this image exists, or update the path
-      last_modified_at: true # Enable last modified date for pages
-
-# Header Navigation (main menu)
-# This will be your primary navigation bar.
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about/"
-  - title: "Publications"
-    url: "/publications/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "Blog"
-    url: "/blog/"
-  - title: "CV"
-    url: "/assets/cv/CV_Samantha_Alejandre_Resume.pdf" # Make sure this path is correct and the file is uploaded.
+        # You can add a default overlay_image here too if you want all pages to have one
+        overlay_image: /assets/images/banner.jpg
