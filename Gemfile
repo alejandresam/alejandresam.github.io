@@ -8,6 +8,9 @@ gem "jekyll", "~> 4.3"
 # Minimal Mistakes theme
 gem "minimal-mistakes-jekyll", "~> 4.26"
 
+
+gem "github-pages", group: :jekyll_plugins
+
 # Add your plugins
 gem "jekyll-paginate"
 gem "jekyll-sitemap"
