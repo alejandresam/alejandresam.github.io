@@ -4,10 +4,10 @@
 // -- Colors --
 $body-color: #333; // Darker text for better readability
 $text-color: #333;
-$link-color: #007bff; // A nice blue for links
+$link-color: #00897B; // A clear, distinct mint green for links, similar to caihanlin.com's accents.
 $link-color-hover: darken($link-color, 15%); // Darken on hover
-$masthead-link-color: #fff; // White links in the header
-$masthead-link-color-hover: rgba(#fff, 0.5); // Lighter white on hover
+$masthead-link-color: #333; // Darker links for masthead on white background
+$masthead-link-color-hover: $link-color; // Use primary link color on hover for masthead
 
 // -- Typography (Fonts) --
 // The reference sites use clean, sans-serif fonts. Inter is a good choice.
