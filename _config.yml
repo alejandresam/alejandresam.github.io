@@ -5,7 +5,7 @@
 # features and then customize it to your liking.
 
 # Basic Site Information
-title: Samantha Alejandre - Personal Portfolio
+title: Personal Portfolio
 tagline: "Electrical & Computer Engineering MS Student | Machine Learning Researcher" # Updated tagline to be more descriptive
 description: >- # this means to ignore newlines until "baseurl:"
   This is a personal portfolio website showcasing projects, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.
@@ -85,7 +85,6 @@ defaults:
       type: "posts"
     values:
       layout: "single"
-      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -96,7 +95,6 @@ defaults:
       type: "pages"
     values:
       layout: "single"
-      author_profile: true
       # Add these lines for header background and overlay on pages
       header:
         overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
