@@ -17,12 +17,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  color: #2c3e50; /* A slightly darker blue-grey for headings */
+  color: #2c3e50; /* A slightly darker blue-grey for headings, keeping this for now unless you want a mint heading color */
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
-// --- Header/Masthead Customization (similar to lyang36.github.io) ---
+// --- Header/Masthead Customization (Inspired by caihanlin.com minimalist approach) ---
+// We are removing the .page__hero styling entirely as it's designed for large banners and conflicts with the minimalist header.
+/*
 .page__hero {
   background-size: cover;
   background-position: center center;
@@ -41,16 +43,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3em; // Larger font size for main heading
   color: #fff; // White color for heading on the hero image
   margin-bottom: 0.5em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for readability */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); // Subtle shadow for readability
 }
 
 .page__hero p {
   font-size: 1.2em;
   color: #fff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Subtle shadow for readability */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); // Subtle shadow for readability
 }
 
-// Ensure the profile picture in the hero is styled correctly
+// Ensure the profile picture in the hero is styled correctly (no longer needed in hero)
 .page__hero .author__avatar {
   border: 5px solid rgba(255,255,255,0.8); // White border for avatar
   box-shadow: 0 0 15px rgba(0,0,0,0.3); // Subtle shadow
@@ -72,21 +74,36 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2em;
   }
 }
+*/
+// The above .page__hero section is commented out to achieve a minimalist header.
 
-// --- Navigation Bar ---
+// --- Navigation Bar (Masthead) ---
+.masthead {
+  background-color: #ffffff; // White background for the navigation bar
+  border-bottom: 1px solid #e0e0e0; // Subtle bottom border
+  padding: 1em 0; // Add some vertical padding
+}
+
 .masthead__inner-wrap {
   max-width: 1200px; /* Adjust max-width of header content */
+  padding: 0 1em; // Add horizontal padding for smaller screens
 }
 
 .site-title {
   font-size: 1.8em; // Larger site title
   font-weight: bold;
+  color: $body-color; // Use the body text color for the site title
 }
 
 .masthead__menu a {
   font-weight: 500; // Slightly bolder navigation links
   text-transform: uppercase; // Uppercase links like lyang36.github.io
+  color: #333; // Darker links for better contrast on white background
+  &:hover {
+    color: $link-color; // Use your primary link color on hover
+  }
 }
+
 
 // --- Footer Styling ---
 .page__footer {
@@ -98,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #bdc3c7; // Subtle text color in footer
 }
 
-// --- Author Profile (on pages other than home) ---
+// --- Author Profile (on pages other than home - sidebar) ---
 .sidebar {
   background-color: #f8f8f8; // Light background for sidebar
   padding: 1.5em;
@@ -118,4 +135,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .archive__item-title {
   font-size: 1.8em; // Larger titles for blog posts/projects
+}
+
+// Custom styles for buttons to match a cleaner aesthetic
+.btn {
+  border-radius: 5px;
+  padding: 0.75em 1.25em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.btn--primary {
+  background-color: $link-color; // Use the primary link color for primary buttons
+  color: #fff;
+  border-color: $link-color;
+  &:hover {
+    background-color: darken($link-color, 10%);
+    border-color: darken($link-color, 10%);
+    color: #fff;
+  }
+}
+
+// Styling for the hero content on the homepage, now that .page__hero is gone
+// This ensures your welcome message is still styled nicely without a big banner
+.hero__content {
+  text-align: center;
+  padding: 4em 1em; // Adjust padding to your liking
+  max-width: 800px;
+  margin: 0 auto; // Center the content
+  background-color: transparent; // Ensure it's transparent and lets the overlay_color show
+  // Any specific text colors if needed, but they should inherit from body naturally
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  p.lead {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
 }
