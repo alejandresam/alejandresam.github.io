@@ -1,14 +1,15 @@
 ---
 layout: home
-author_profile: true
+# Remove author_profile: true from here to prevent a second sidebar profile
+# author_profile: true
 header:
-  image: "/assets/images/banner.jpg" # Add a compelling banner image here!
+  # We will remove the image here to avoid the banner you dislike
+  # image: "/assets/images/banner.jpg"
+  overlay_color: "#E0F2F1" # A light mint green background, inspired by caihanlin.com
+  overlay_filter: 0.1 # Very light filter for a subtle effect
 ---
 
 <div class="hero__content">
-  {% if site.author.avatar %}
-    <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="author__avatar">
-  {% endif %}
   <h1 id="welcome-to-my-personal-portfolio">Welcome to My Personal Portfolio!</h1>
   <p class="lead">Hello there! I'm Samantha Alejandre. Welcome to my personal website where I share my work, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.</p>
 </div>
@@ -67,7 +68,7 @@ header:
         <a href="/projects/#changebot" rel="permalink">ChangeBot</a>
       </h3>
       <p class="archive__item-excerpt" itemprop="description">Led a 6-member team in developing "ChangeBot," a RAG-based chatbot to generate personalized emails for local representatives, reducing misdirected emails by 33%.</p>
-      <a href="/projects/#changebot" class="btn btn--primary">Learn More &rarr;</a>
+      <a href="#changebot" class="btn btn--primary">Learn More &rarr;</a>
     </div>
   </div>
 </div>
