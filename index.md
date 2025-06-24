@@ -1,89 +1,78 @@
 ---
-layout: home
+layout: single
+title: "My Projects"
+permalink: /projects/
 author_profile: true
 header:
-  image: "/assets/images/banner.jpg" # Add a compelling banner image here!
+  overlay_color: "#5e636b"
+  overlay_filter: 0.5
+  overlay_image: /assets/images/banner.jpg
 ---
 
-<div class="hero__content">
-  {% if site.author.avatar %}
-    <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="author__avatar">
-  {% endif %}
-  <h1 id="welcome-to-my-personal-portfolio">Welcome to My Personal Portfolio!</h1>
-  <p class="lead">Hello there! I'm Samantha Alejandre. Welcome to my personal website where I share my work, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.</p>
+This page showcases my personal and academic projects. Each project highlights my skills in Machine Learning, Data Science, and AI, from conceptualization to deployment.
+
+<div class="archive">
+  <h2 class="archive__item-title">Featured Projects</h2>
+
+  <div class="feature__wrapper">
+    <div class="feature__item">
+      <div class="archive__item">
+        <h3 class="archive__item-title" itemprop="headline">
+          <a href="#chess-rl-transformer" rel="permalink">Chess RL Transformer</a>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">Built an autoregressive transformer for chess move prediction (FEN sequences), achieving 98%+ legal move accuracy and developing an open-source UI for interactive play. Co-leading GRPO (Reinforcement Learning) refinement with Stockfish.</p>
+        <p class="page__meta">
+          <i class="fas fa-code-branch" aria-hidden="true"></i> GitHub: <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank">Link</a> |
+          <i class="fas fa-play-circle" aria-hidden="true"></i> Demo: <a href="YOUR_DEMO_LINK_HERE" target="_blank">Link</a>
+        </p>
+        <a href="#chess-rl-transformer" class="btn btn--primary">Learn More &rarr;</a>
+      </div>
+    </div>
+
+    <div class="feature__item">
+      <div class="archive__item">
+        <h3 class="archive__item-title" itemprop="headline">
+          <a href="#semg-keystroke-decoder" rel="permalink">SEMG Keystroke Decoder</a>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">Engineered and evaluated deep learning models (Conv-GRU, LSTM, Transformer) for SEMG-to-QWERTY keystroke decoding, identifying Conv-GRU as optimal architecture with a 2x Character Error Rate (CER) improvement.</p>
+        <p class="page__meta">
+          <i class="fas fa-code-branch" aria-hidden="true"></i> GitHub: <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank">Link</a>
+        </p>
+        <a href="#semg-keystroke-decoder" class="btn btn--primary">Learn More &rarr;</a>
+      </div>
+    </div>
+
+    <div class="feature__item">
+      <div class="archive__item">
+        <h3 class="archive__item-title" itemprop="headline">
+          <a href="#changebot" rel="permalink">ChangeBot</a>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">Led a 6-member team in developing "ChangeBot," a RAG-based chatbot to generate personalized emails for local representatives, reducing misdirected emails by 33%.</p>
+        <p class="page__meta">
+          <i class="fas fa-code-branch" aria-hidden="true"></i> GitHub: <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank">Link</a>
+        </p>
+        <a href="#changebot" class="btn btn--primary">Learn More &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="archive__item-title">Other Projects</h2>
+  <p>Here are some other projects I've worked on:</p>
+
+  <ul>
+    <li>
+      <h3>Project Title X</h3>
+      <p>Brief description of Project X. This project involved [technologies used] and achieved [key outcomes].</p>
+      <p class="page__meta">
+        <i class="fas fa-code-branch" aria-hidden="true"></i> GitHub: <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank">Link</a>
+      </p>
+    </li>
+    <li>
+      <h3>Project Title Y</h3>
+      <p>Brief description of Project Y. This was a [type] project where I focused on [specific aspect].</p>
+      <p class="page__meta">
+        <i class="fas fa-link" aria-hidden="true"></i> Website: <a href="YOUR_PROJECT_WEBSITE_LINK_HERE" target="_blank">Link</a>
+      </p>
+    </li>
+  </ul>
 </div>
-
-<h2 class="archive__item-title">About This Site</h2>
-<p>Here you'll find information about:</p>
-<ul>
-  <li>My academic background and experiences.</li>
-  <li>My research publications and ongoing projects.</li>
-  <li>Personal projects and creative endeavors.</li>
-  <li>My blog where I share thoughts on various topics.</li>
-</ul>
-<p>Feel free to explore and connect with me!</p>
-
-<h2 class="archive__item-title">Latest Blog Posts</h2>
-{# Displays up to 3 most recent blog posts #}
-{% for post in site.posts limit: 3 %}
-  <article class="archive__item">
-    <h3 class="archive__item-title" itemprop="headline">
-      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-    </h3>
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-    <p class="page__meta"><i class="far fa-calendar-alt" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.last_modified_at %} &nbsp; <i class="fas fa-fw fa-pencil-alt" aria-hidden="true"></i> <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%B %d, %Y" }}</time>{% endif %}</p>
-    <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
-  </article>
-{% endfor %}
-
-<h2 class="archive__item-title">Featured Projects</h2>
-<p>(You can add brief summaries and links to your projects here. We'll create a dedicated projects page later.)</p>
-
-{# Example structure for featured projects. Replace with your actual projects. #}
-<div class="feature__wrapper">
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3 class="archive__item-title" itemprop="headline">
-        <a href="/projects/#chess-rl-transformer" rel="permalink">Chess RL Transformer</a>
-      </h3>
-      <p class="archive__item-excerpt" itemprop="description">Built an autoregressive transformer for chess move prediction (FEN sequences), achieving 98%+ legal move accuracy and developing an open-source UI for interactive play. Co-leading GRPO (Reinforcement Learning) refinement with Stockfish.</p>
-      <a href="/projects/#chess-rl-transformer" class="btn btn--primary">Learn More &rarr;</a>
-    </div>
-  </div>
-
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3 class="archive__item-title" itemprop="headline">
-        <a href="/projects/#semg-keystroke-decoder" rel="permalink">SEMG Keystroke Decoder</a>
-      </h3>
-      <p class="archive__item-excerpt" itemprop="description">Engineered and evaluated deep learning models (Conv-GRU, LSTM, Transformer) for SEMG-to-QWERTY keystroke decoding, identifying Conv-GRU as optimal architecture with a 2x Character Error Rate (CER) improvement.</p>
-      <a href="/projects/#semg-keystroke-decoder" class="btn btn--primary">Learn More &rarr;</a>
-    </div>
-  </div>
-
-  <div class="feature__item">
-    <div class="archive__item">
-      <h3 class="archive__item-title" itemprop="headline">
-        <a href="/projects/#changebot" rel="permalink">ChangeBot</a>
-      </h3>
-      <p class="archive__item-excerpt" itemprop="description">Led a 6-member team in developing "ChangeBot," a RAG-based chatbot to generate personalized emails for local representatives, reducing misdirected emails by 33%.</p>
-      <a href="/projects/#changebot" class="btn btn--primary">Learn More &rarr;</a>
-    </div>
-  </div>
-</div>
-
-<p>For more projects, please visit my <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
-
-<h2 class="archive__item-title">Connect With Me</h2>
-<p>You can find me on these platforms:</p>
-<ul>
-  {% for link in site.author.links %}
-    {% if link.url %}
-      <li>
-        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-          {% if link.icon %}<i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>{% endif %} {{ link.label }}
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
