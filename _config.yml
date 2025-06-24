@@ -5,26 +5,25 @@
 # features and then customize it to your liking.
 
 # Basic Site Information
-title: Personal Portfolio
-tagline: "Electrical & Computer Engineering MS Student | Machine Learning Researcher" # Updated tagline to be more descriptive
+title: Samantha Alejandre - Personal Portfolio
+tagline: "Electrical & Computer Engineering M.S. Student | Machine Learning Researcher" # Consistent with your about page
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a personal portfolio website showcasing projects, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.
-  It's built with Jekyll and the Minimal Mistakes theme, customized for a modern academic/personal look.
+  Personal portfolio showcasing projects, research, interests, and insights in Machine Learning, Data Science, and Artificial Intelligence.
+  Built with Jekyll and customized for a clean, modern academic/personal look.
 baseurl: "" # the subpath of your site, e.g., /blog
 url: "https://alejandresam.github.io" # the base hostname & protocol for your site, e.g., http://example.com
 repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo name
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Theme configuration (Minimal Mistakes specific)
-minimal_mistakes_skin: "default" # Possible values: "default", "air", "aqua", "contrast", "dark", "dirt", "external", "mint", "sunrise"
-                                 # We'll stick with "default" for now as you're overriding with custom CSS.
+minimal_mistakes_skin: "mint" # Attempting to use the Minimal Mistakes "mint" skin
 remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
 author:
-  name: "Samantha Alejandre" # Changed name to Samantha Alejandre as per CV
+  name: "Samantha Alejandre"
   avatar: "/assets/images/Samantha_headshot.jpg" # You'll need to add your photo here!
-  bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI." # Updated bio to be more specific
+  bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI."
   location: "Los Angeles, CA"
   links:
     - label: "Email"
@@ -85,6 +84,7 @@ defaults:
       type: "posts"
     values:
       layout: "single"
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -95,9 +95,9 @@ defaults:
       type: "pages"
     values:
       layout: "single"
-      # Add these lines for header background and overlay on pages
+      author_profile: true
+      # Updated header for pages to match minimalist mint theme
       header:
-        overlay_color: "#5e636b" # Dark grey overlay (adjust as desired)
-        overlay_filter: 0.5 # 50% opacity
-        # You can add a default overlay_image here too if you want all pages to have one
-        overlay_image: /assets/images/banner.jpg
+        overlay_color: "#E0F2F1" # Light mint color for page headers
+        overlay_filter: 0.1 # Subtle filter
+        # overlay_image: # No default overlay image for pages, keeping it clean
