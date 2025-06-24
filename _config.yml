@@ -22,7 +22,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for Git
 # Site Author Information
 author:
   name: "Samantha Alejandre"
-  avatar: "/assets/images/Samantha_headshot.jpg" # You'll need to add your photo here!
+  avatar: "/assets/images/Samantha_headshot.jpg" # Ensure this path is correct and image exists!
   bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI."
   location: "Los Angeles, CA"
   links:
@@ -38,7 +38,26 @@ author:
     - label: "Google Scholar"
       icon: "ai ai-google-scholar-square" # Academicons are supported!
       url: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" # IMPORTANT: Update YOUR_SCHOLAR_ID
-    # Add other links as desired (e.g., Twitter, ResearchGate, personal website)
+    - label: "CV" # Added CV link here for sidebar as well
+      icon: "ai ai-cv-square" # Using an academicons icon for CV
+      url: "/assets/cv/CV_Samantha_Alejandre_Resume.pdf" # Link to your PDF
+
+# Navigation (for top menu)
+navigation:
+  main: # This 'main' key corresponds to the 'main:' in _data/navigation.yml
+    - title: "About"
+      url: /about/
+    - title: "Projects"
+      url: /projects/
+    - title: "Publications"
+      url: /publications/
+    - title: "Blog"
+      url: /blog/
+    - title: "Hobbies"
+      url: /hobbies/
+    - title: "CV"
+      url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf # Link to your PDF
+
 
 # Build settings
 markdown: kramdown

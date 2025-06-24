@@ -1,0 +1,13 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Publications"
+    url: /publications/
+  - title: "Blog"
+    url: /blog/
+  - title: "Hobbies" # We will create this page later for your baking section
+    url: /hobbies/
+  - title: "CV"
+    url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf # Link directly to your PDF
