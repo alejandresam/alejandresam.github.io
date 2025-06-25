@@ -21,7 +21,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for Git
 
 # Site Author Information
 author:
-  #name: "Samantha Alejandre"
+  name: "Samantha Alejandre"
   avatar: "/assets/images/Samantha_headshot.jpg" # Ensure this path is correct and image exists!
   bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI."
   location: "Los Angeles, CA"
