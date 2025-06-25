@@ -4,13 +4,13 @@ layout: home
 # author_profile: true
 -
 <div class="hero__content">
-+header:
-+  overlay_color: "rgba(0, 0, 0, 0)" # Set overlay color to fully transparent
-+  overlay_filter: 0 # No filter effect
-+  title: "" # Explicitly remove the title from this banner section
-+---
-+
-+<div class="hero__content">
+header:
+  overlay_color: "rgba(0, 0, 0, 0)" # Set overlay color to fully transparent
+  overlay_filter: 0 # No filter effect
+  title: "" # Explicitly remove the title from this banner section
+
+
+<div class="hero__content">
    <i class="fas fa-graduation-cap" style="font-size: 3em; color: #00897B; margin-bottom: 0.3em;"></i> {# A subtle graduation cap icon for UCLA #}
    <h1 id="welcome-to-my-personal-portfolio">Samantha Alejandre</h1>
    <p class="lead">Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span></p>
