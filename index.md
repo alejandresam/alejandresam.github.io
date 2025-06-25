@@ -2,32 +2,16 @@
 layout: home
 # Remove author_profile: true from here to prevent a second sidebar profile
 # author_profile: true
--
-<div class="hero__content">
-header:
-  overlay_color: "rgba(0, 0, 0, 0)" # Set overlay color to fully transparent
-  overlay_filter: 0 # No filter effect
-  title: "" # Explicitly remove the title from this banner section
+---
 
+<div class="page__content"> {# Wrapping content in page__content to apply consistent styling #}
+ <h1 id="welcome-to-my-personal-portfolio" style="text-align: center; margin-top: 1em; margin-bottom: 0.5em;">Welcome!</h1>
+ <p class="lead" style="text-align: center; font-size: 1.2em; line-height: 1.5; color: #333;">
+   I'm Samantha Alejandre, an Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span>.
+   Explore my work in Machine Learning, Data Science, and Artificial Intelligence, alongside my academic journey and personal projects.
+ </p>
 
-<div class="hero__content">
-   <i class="fas fa-graduation-cap" style="font-size: 3em; color: #00897B; margin-bottom: 0.3em;"></i> {# A subtle graduation cap icon for UCLA #}
-   <h1 id="welcome-to-my-personal-portfolio">Samantha Alejandre</h1>
-   <p class="lead">Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span></p>
-   <p class="lead" style="font-size: 1.1em; margin-top: 0.5em;">Machine Learning | Data Science | Artificial Intelligence</p>
- </div>
- 
- <h2 class="archive__item-title">About This Site</h2>
- <p>Here you'll find information about:</p>
- <ul>
-   <li>My academic background and experiences.</li>
-   <li>My research publications and ongoing projects.</li>
-   <li>Personal projects and creative endeavors.</li>
-   <li>My blog where I share thoughts on various topics.</li>
- </ul>
- <p>Feel free to explore and connect with me!</p>
- 
- <h2 class="archive__item-title">Latest Blog Posts</h2>
+ <h2 class="archive__item-title" style="margin-top: 2em;">Latest Blog Posts</h2>
  {# Displays up to 3 most recent blog posts #}
  {% for post in site.posts limit: 3 %}
    <article class="archive__item">
@@ -39,12 +23,14 @@ header:
      <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
    </article>
  {% endfor %}
- 
- <h2 class="archive__item-title">Featured Projects</h2>
- <p>(You can add brief summaries and links to your projects here. We'll create a dedicated projects page later.)</p>
- 
+
+ <p style="text-align: center; margin-top: 2em;"><a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">View All Blog Posts &rarr;</a></p>
+
+ <h2 class="archive__item-title" style="margin-top: 2em;">Featured Projects</h2>
+ <p style="text-align: center;">Discover my key projects in machine learning, data science, and AI on the <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
+
  {# Example structure for featured projects. Replace with your actual projects. #}
- <div class="feature__wrapper">
+ <div class="feature__wrapper" style="margin-bottom: 2em;">
    <div class="feature__item">
      <div class="archive__item">
        <h3 class="archive__item-title" itemprop="headline">
@@ -54,7 +40,7 @@ header:
        <a href="/projects/#chess-rl-transformer" class="btn btn--primary">Learn More &rarr;</a>
      </div>
    </div>
- 
+
    <div class="feature__item">
      <div class="archive__item">
        <h3 class="archive__item-title" itemprop="headline">
@@ -64,7 +50,7 @@ header:
        <a href="/projects/#semg-keystroke-decoder" class="btn btn--primary">Learn More &rarr;</a>
      </div>
    </div>
- 
+
    <div class="feature__item">
      <div class="archive__item">
        <h3 class="archive__item-title" itemprop="headline">
@@ -75,15 +61,15 @@ header:
      </div>
    </div>
  </div>
- 
- <p>For more projects, please visit my <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
- 
- <h2 class="archive__item-title">Connect With Me</h2>
- <p>You can find me on these platforms:</p>
- <ul>
+
+ <p style="text-align: center;">For more projects, please visit my <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
+
+ <h2 class="archive__item-title" style="margin-top: 2em;">Connect With Me</h2>
+ <p style="text-align: center;">You can find me on these platforms:</p>
+ <ul style="list-style: none; padding: 0; text-align: center;">
    {% for link in site.author.links %}
      {% if link.url %}
-       <li>
+       <li style="display: inline-block; margin: 0 10px;">
          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
            {% if link.icon %}<i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>{% endif %} {{ link.label }}
          </a>
@@ -91,3 +77,4 @@ header:
      {% endif %}
    {% endfor %}
  </ul>
+</div>
