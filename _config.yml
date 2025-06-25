@@ -5,7 +5,7 @@
 # features and then customize it to your liking.
 
 # Basic Site Information
-title: Samantha Alejandre - Personal Portfolio
+
 tagline: "Electrical & Computer Engineering M.S. Student | Machine Learning Researcher" # Consistent with your about page
 description: >- # this means to ignore newlines until "baseurl:"
   Personal portfolio showcasing projects, research, interests, and insights in Machine Learning, Data Science, and Artificial Intelligence.
@@ -16,7 +16,7 @@ repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo na
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Theme configuration (Minimal Mistakes specific)
-minimal_mistakes_skin: "mint" # Attempting to use the Minimal Mistakes "mint" skin
+minimal_mistakes_skin: "air" # Attempting to use the Minimal Mistakes "mint" skin
 remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
@@ -116,7 +116,7 @@ defaults:
       layout: "single"
       author_profile: true
       # Updated header for pages to match minimalist mint theme
-      #header:
-        #overlay_color: "#E0F2F1" # Light mint color for page headers
-        #overlay_filter: 0.1 # Subtle filter
+      header:
+        overlay_color: "#E0F2F1" # Light mint color for page headers
+        overlay_filter: 0.1 # Subtle filter
         # overlay_image: # No default overlay image for pages, keeping it clean

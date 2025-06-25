@@ -4,7 +4,7 @@ layout: home
 # author_profile: true
 ---
 
-<div class="page__content"> {# Wrapping content in page__content to apply consistent styling #}
+<div class="page__content"> 
  <h1 id="welcome-to-my-personal-portfolio" style="text-align: center; margin-top: 1em; margin-bottom: 0.5em;">Welcome!</h1>
  <p class="lead" style="text-align: center; font-size: 1.2em; line-height: 1.5; color: #333;">
    I'm Samantha Alejandre, an Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span>.
