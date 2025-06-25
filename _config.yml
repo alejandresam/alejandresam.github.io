@@ -114,9 +114,9 @@ defaults:
       type: "pages"
     values:
       layout: "single"
-      author_profile: true
+      #author_profile: true
       # Updated header for pages to match minimalist mint theme
       header:
         overlay_color: "#E0F2F1" # Light mint color for page headers
-        overlay_filter: 0.1 # Subtle filter
-        # overlay_image: # No default overlay image for pages, keeping it clean
+        #overlay_filter: 0.1 # Subtle filter
+        overlay_image: "/assets/images/banner.jpg"
