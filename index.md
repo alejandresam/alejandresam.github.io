@@ -2,20 +2,18 @@
 layout: home
 # Remove author_profile: true from here to prevent a second sidebar profile
 # author_profile: true
-header:
-  # We will remove the image here to avoid the banner you dislike
-  # image: "/assets/images/banner.jpg"
-  overlay_color: "#E0F2F1" # A light mint green background, inspired by caihanlin.com
-  overlay_filter: 0.1 # Very light filter for a subtle effect
+-header:
+-  # We will remove the image here to avoid the banner you dislike
+-  # image: "/assets/images/banner.jpg"
+-  overlay_color: "#E0F2F1" # A light mint green background, inspired by caihanlin.com
+-  overlay_filter: 0.1 # Very light filter for a subtle effect
 ---
 
 <div class="hero__content">
--  <h1 id="welcome-to-my-personal-portfolio">Welcome to My Personal Portfolio!</h1>
--  <p class="lead">Hello there! I'm Samantha Alejandre. Welcome to my personal website where I share my work, research, and interests in Machine Learning, Data Science, and Artificial Intelligence.</p>
-+  <i class="fas fa-graduation-cap" style="font-size: 3em; color: #00897B; margin-bottom: 0.3em;"></i> {# A subtle graduation cap icon for UCLA #}
-+  <h1 id="welcome-to-my-personal-portfolio">Samantha Alejandre</h1>
-+  <p class="lead">Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span></p>
-+  <p class="lead" style="font-size: 1.1em; margin-top: 0.5em;">Machine Learning | Data Science | Artificial Intelligence</p>
+  <i class="fas fa-graduation-cap" style="font-size: 3em; color: #00897B; margin-bottom: 0.3em;"></i> {# A subtle graduation cap icon for UCLA #}
+  <h1 id="welcome-to-my-personal-portfolio">Samantha Alejandre</h1>
+  <p class="lead">Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span></p>
+  <p class="lead" style="font-size: 1.1em; margin-top: 0.5em;">Machine Learning | Data Science | Artificial Intelligence</p>
 </div>
 
 <h2 class="archive__item-title">About This Site</h2>
