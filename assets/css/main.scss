@@ -5,7 +5,7 @@
 // Import your custom variables (must be imported AFTER minimal-mistakes for overrides to work)
 @import "custom/variables";
 
-// Custom styles for Alejandra Sam's website
+// Custom styles for Samantha Alejandre's website
 // Add your specific CSS overrides here to match the desired layout/aesthetics.
 
 // --- General Body & Typography ---
@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // --- Header/Masthead Customization (Inspired by caihanlin.com minimalist approach) ---
-// We are removing the .page__hero styling entirely as it's designed for large banners and conflicts with the minimalist header.
+// The .page__hero section is entirely removed/commented out as it's designed for large banners and conflicts with the minimalist header.
+// Keeping it commented out for reference, but it's not active.
 /*
 .page__hero {
   background-size: cover;
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 */
-// The above .page__hero section is commented out to achieve a minimalist header.
+// You can remove this entire commented block if you wish to further clean up the file.
 
 // --- Navigation Bar (Masthead) ---
 .masthead {
@@ -129,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2em;
   border-radius: 8px; // Rounded corners for content block
   box-shadow: 0 2px 5px rgba(0,0,0,0.08); // Subtle shadow
-  margin-top: 2em; // Space from header
+  margin-top: 1em; // Reduce space from masthead for a more direct flow
   margin-bottom: 2em;
 }
 
@@ -162,17 +163,21 @@ h1, h2, h3, h4, h5, h6 {
 // This ensures your welcome message is still styled nicely without a big banner
 .hero__content {
   text-align: center;
-  padding: 4em 1em; // Adjust padding to your liking
+  padding: 2em 1em; // Reduced top/bottom padding for a more compact intro
   max-width: 800px;
   margin: 0 auto; // Center the content
-  background-color: transparent; // Ensure it's transparent and lets the overlay_color show
+  // Now that the header block is removed from index.md, this section will be part of .page__content.
+  // Its background will be the .page__content background (white).
+  // No need for overlay_color property here.
   // Any specific text colors if needed, but they should inherit from body naturally
   h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    color: #2c3e50; // Ensure consistency with other headings
   }
   p.lead {
     font-size: 1.2em;
     line-height: 1.5;
+    color: $body-color; // Ensure text color is consistent
   }
 }

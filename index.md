@@ -10,21 +10,11 @@ layout: home
 ---
 
 <div class="hero__content">
-  <i class="fas fa-graduation-cap" style="font-size: 3em; color: #00897B; margin-bottom: 0.3em;"></i> {# A subtle graduation cap icon for UCLA #}
   <h1 id="welcome-to-my-personal-portfolio">Samantha Alejandre</h1>
   <p class="lead">Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span></p>
   <p class="lead" style="font-size: 1.1em; margin-top: 0.5em;">Machine Learning | Data Science | Artificial Intelligence</p>
 </div>
 
-<h2 class="archive__item-title">About This Site</h2>
-<p>Here you'll find information about:</p>
-<ul>
-  <li>My academic background and experiences.</li>
-  <li>My research publications and ongoing projects.</li>
-  <li>Personal projects and creative endeavors.</li>
-  <li>My blog where I share thoughts on various topics.</li>
-</ul>
-<p>Feel free to explore and connect with me!</p>
 
 <h2 class="archive__item-title">Latest Blog Posts</h2>
 {# Displays up to 3 most recent blog posts #}
@@ -77,16 +67,3 @@ layout: home
 
 <p>For more projects, please visit my <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
 
-<h2 class="archive__item-title">Connect With Me</h2>
-<p>You can find me on these platforms:</p>
-<ul>
-  {% for link in site.author.links %}
-    {% if link.url %}
-      <li>
-        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-          {% if link.icon %}<i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>{% endif %} {{ link.label }}
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
