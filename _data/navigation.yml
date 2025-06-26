@@ -1,4 +1,6 @@
 main:
+  - title: "Home" # Added Home link as the first item
+    url: /
   - title: "About"
     url: /about/
   - title: "Projects"

@@ -1,9 +1,17 @@
 
-// Import Minimal Mistakes theme styles
-@import "minimal-mistakes";
 
-// Import your custom variables (must be imported AFTER minimal-mistakes for overrides to work)
+// Import Minimal Mistakes theme styles
+// It's crucial that your custom variables are imported *after* the skin,
+// but *before* the general Minimal Mistakes partials.
+
+// First, import the Minimal Mistakes skins (if you're using one)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+// Now, import your custom variables to override the skin's defaults
 @import "custom/variables";
+
+// Then, import the main Minimal Mistakes partials
+@import "minimal-mistakes"; // main partials
 
 // Custom styles for Samantha Alejandre's website
 // Add your specific CSS overrides here to match the desired layout/aesthetics.
