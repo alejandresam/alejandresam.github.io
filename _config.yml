@@ -119,4 +119,4 @@ defaults:
       header:
         overlay_color: "#E0F2F1" # Light mint color for page headers
         overlay_filter: 0.1 # Subtle filter
-        overlay_image: "/assets/images/banner.jpg"
+        overlay_image: "/assets/images/banner3.jpg"
