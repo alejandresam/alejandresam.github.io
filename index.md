@@ -7,26 +7,13 @@ layout: home
 <div class="page__content">
  {# The welcome message and introduction will be managed by the theme's default settings and the tagline in _config.yml #}
 
- <h2 class="archive__item-title" style="margin-top: 2em;">Latest Blog Posts</h2>
- {# Displays up to 3 most recent blog posts #}
- {% for post in site.posts limit: 3 %}
-   <article class="archive__item">
-     <h3 class="archive__item-title" itemprop="headline">
-       <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-     </h3>
-     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-     <p class="page__meta"><i class="far fa-calendar-alt" aria-hidden="true"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>{% if post.last_modified_at %} &nbsp; <i class="fas fa-fw fa-pencil-alt" aria-hidden="true"></i> <time datetime="{{ post.last_modified_at | date_to_xmlschema }}">{{ post.last_modified_at | date: "%B %d, %Y" }}</time>{% endif %}</p>
-     <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
-   </article>
- {% endfor %}
+ {# Removed "Latest Blog Posts" section and its content #}
 
- <p style="text-align: center; margin-top: 2em;"><a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">View All Blog Posts &rarr;</a></p>
+ <h2 class="archive__item-title" style="margin-top: 2em; text-align: center;">Featured Projects</h2>
+ <p style="text-align: center; margin-bottom: 2em;">Discover my key projects in machine learning, data science, and AI.</p>
 
- <h2 class="archive__item-title" style="margin-top: 2em;">Featured Projects</h2>
- <p style="text-align: center;">Discover my key projects in machine learning, data science, and AI on the <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
-
- {# Example structure for featured projects. Replace with your actual projects. #}
- <div class="feature__wrapper" style="margin-bottom: 2em;">
+ {# Modified to use a horizontal scrollable container #}
+ <div class="projects-horizontal-scroll">
    <div class="feature__item">
      <div class="archive__item">
        <h3 class="archive__item-title" itemprop="headline">
@@ -58,19 +45,8 @@ layout: home
    </div>
  </div>
 
- <p style="text-align: center;">For more projects, please visit my <a href="{{ '/projects/' | relative_url }}">Projects page</a>.</p>
+ <p style="text-align: center; margin-top: 2em;"><a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">View All Projects &rarr;</a></p>
 
- <h2 class="archive__item-title" style="margin-top: 2em;">Connect With Me</h2>
- <p style="text-align: center;">You can find me on these platforms:</p>
- <ul style="list-style: none; padding: 0; text-align: center;">
-   {% for link in site.author.links %}
-     {% if link.url %}
-       <li style="display: inline-block; margin: 0 10px;">
-         <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-           {% if link.icon %}<i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>{% endif %} {{ link.label }}
-         </a>
-       </li>
-     {% endif %}
-   {% endfor %}
- </ul>
+ {# Removed "Connect With Me" section #}
+
 </div>

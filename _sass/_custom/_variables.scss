@@ -2,15 +2,20 @@
 // This file overrides or extends Minimal Mistakes' default variables.
 
 // -- Colors --
-$body-color: #333; // Darker text for better readability
-$text-color: #333;
-$link-color: #00897B; // A clear, distinct mint green for links, similar to caihanlin.com's accents.
-$link-color-hover: darken($link-color, 15%); // Darken on hover
-$masthead-link-color: #333; // Darker links for masthead on white background
-$masthead-link-color-hover: $link-color; // Use primary link color on hover for masthead
+$creamy-beige: #F8F4E3; // A light, warm, creamy beige for backgrounds
+$warm-dark-grey: #4A4A4A; // A soft, dark grey for body text
+$accent-color: #B29D7C; // A muted, warm accent color (e.g., for links, buttons)
+$accent-color-hover: darken($accent-color, 15%); // Darken on hover
+$light-border: #E0DED7; // A soft, light border color
+
+$body-color: $warm-dark-grey; // Use the new warm dark grey for body text
+$text-color: $warm-dark-grey;
+$link-color: $accent-color; // Use the new accent color for links
+$link-color-hover: $accent-color-hover; // Use the darkened accent for link hover
+$masthead-link-color: $warm-dark-grey; // Darker links for masthead on creamy background
+$masthead-link-color-hover: $accent-color; // Use primary accent color on hover for masthead
 
 // -- Typography (Fonts) --
-// The reference sites use clean, sans-serif fonts. Inter is a good choice.
 // To use a Google Font like "Open Sans", you'd typically add this to your `_includes/head/custom.html` file:
 // <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -20,5 +25,4 @@ $header-font-family: $font-family-sans-serif; // Apply to headers
 $body-font-family: $font-family-sans-serif; // Apply to body text
 
 // -- Spacing --
-// You can adjust padding, margins, etc. here if needed.
 $gutter: 1.5em; // Standard spacing unit

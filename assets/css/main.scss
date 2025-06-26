@@ -13,137 +13,109 @@ body {
   font-family: $body-font-family;
   color: $body-color;
   line-height: 1.6;
+  background-color: $creamy-beige; // Apply creamy beige to the body background
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  color: #2c3e50; /* A slightly darker blue-grey for headings, keeping this for now unless you want a mint heading color */
+  color: $warm-dark-grey; // Use the new dark grey for headings
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
-// --- Header/Masthead Customization (Inspired by caihanlin.com minimalist approach) ---
-// The .page__hero section is entirely removed/commented out as it's designed for large banners and conflicts with the minimalist header.
-// Keeping it commented out for reference, but it's not active.
-/*
+// --- Header/Masthead Customization ---
 .page__hero {
   background-size: cover;
   background-position: center center;
   text-align: center;
-  padding: 8em 0; // More vertical padding for a larger hero section
+  padding: 4em 0;
   position: relative;
-  color: #fff; // Ensure text on hero image is white
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 400px; // Ensure a minimum height for the hero section
-}
-
-.page__hero h1 {
-  font-size: 3em; // Larger font size for main heading
-  color: #fff; // White color for heading on the hero image
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); // Subtle shadow for readability
-}
-
-.page__hero p {
-  font-size: 1.2em;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5); // Subtle shadow for readability
-}
-
-// Ensure the profile picture in the hero is styled correctly (no longer needed in hero)
-.page__hero .author__avatar {
-  border: 5px solid rgba(255,255,255,0.8); // White border for avatar
-  box-shadow: 0 0 15px rgba(0,0,0,0.3); // Subtle shadow
-  width: 150px; // Set a fixed width
-  height: 150px; // Set a fixed height
-  object-fit: cover; // Ensure image covers the area
-  border-radius: 50%; // Make it perfectly round
-  margin-bottom: 1.5em;
-}
-
-// Adjust layout for smaller screens
-@media (max-width: 768px) {
-  .page__hero {
-    padding: 4em 0;
-    min-height: 300px;
+  min-height: 250px;
+  .author__avatar {
+    border: 5px solid rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-top: 2em;
   }
-
-  .page__hero h1 {
-    font-size: 2em;
+  h1, p {
+    display: none;
   }
 }
-*/
-// You can remove this entire commented block if you wish to further clean up the file.
-
-// --- Navigation Bar (Masthead) ---
-// --- Header/Masthead Customization (Inspired by caihanlin.com minimalist approach) ---
-// The .page__hero section is entirely removed/commented out as it's designed for large banners and conflicts with the minimalist header.
-// Keeping it commented out for reference, but it's not active.
-/* ... (commented out .page__hero styles) ... */
 
 // --- Navigation Bar (Masthead) ---
 .masthead {
-  background-color: #ffffff; // White background for the navigation bar
-  border-bottom: 1px solid #e0e0e0; // Subtle bottom border
-  padding: 1em 0; // Add some vertical padding
+  background-color: $creamy-beige; // Apply creamy beige to the navigation background
+  border-bottom: 1px solid $light-border; // Subtle bottom border with new color
+  padding: 1em 0;
+  z-index: 10;
+  position: relative;
 }
 
 .masthead__inner-wrap {
-  max-width: 1200px; /* Adjust max-width of header content */
-  padding: 0 1em; // Add horizontal padding for smaller screens
+  max-width: 1200px;
+  padding: 0 1em;
 }
 
 .site-title {
-  font-size: 1.8em; // Larger site title
+  font-size: 1.8em;
   font-weight: bold;
-  color: $body-color; // Use the body text color for the site title
+  color: $warm-dark-grey; // Use warm dark grey for the site title
 }
 
 .masthead__menu a {
-  font-weight: 500; // Slightly bolder navigation links
-  text-transform: uppercase; // Uppercase links like lyang36.github.io
-  color: #333; // Darker links for better contrast on white background
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $warm-dark-grey; // Use warm dark grey for navigation links
   &:hover {
-    color: $link-color; // Use your primary link color on hover
+    color: $accent-color; // Use your new accent color on hover
   }
 }
 
 // --- Footer Styling ---
 .page__footer {
-  background-color: #2c3e50; // Darker footer background
-  color: #ecf0f1; // Lighter text color
+  background-color: $creamy-beige; // Apply creamy beige to the footer background
+  color: $warm-dark-grey; // Use warm dark grey for footer text
+  border-top: 1px solid $light-border; // Add a border top to the footer
 }
 
 .page__footer .wrapper p {
-  color: #bdc3c7; // Subtle text color in footer
+  color: $warm-dark-grey; // Subtle text color in footer
 }
 
 // --- Author Profile (on pages other than home - sidebar) ---
 .sidebar {
-  background-color: #f8f8f8; // Light background for sidebar
+  background-color: darken($creamy-beige, 3%); // Slightly darker creamy beige for sidebar
   padding: 1.5em;
-  border-radius: 8px; // Rounded corners
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); // Subtle shadow
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border: 1px solid $light-border; // Add a soft border
 }
 
-// Custom styles inspired by caihanlin.com for main content area
+// Custom styles for main content area
 .page__content {
-  background-color: #ffffff; // White background for content
+  background-color: #ffffff; // Keep content block white or use a very light creamy tone if preferred
   padding: 2em;
-  border-radius: 8px; // Rounded corners for content block
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08); // Subtle shadow
-  margin-top: 1em; // Reduce space from masthead for a more direct flow
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  margin-top: 1em;
   margin-bottom: 2em;
+  border: 1px solid $light-border; // Add a soft border to the content block
 }
 
 .archive__item-title {
-  font-size: 1.8em; // Larger titles for blog posts/projects
+  font-size: 1.8em;
 }
 
-// Custom styles for buttons to match a cleaner aesthetic
+// Custom styles for buttons
 .btn {
   border-radius: 5px;
   padding: 0.75em 1.25em;
@@ -151,38 +123,82 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.5px;
+  border: none; // Remove default button border
 }
 
 .btn--primary {
-  background-color: $link-color; // Use the primary link color for primary buttons
+  background-color: $accent-color; // Use the new accent color for primary buttons
   color: #fff;
-  border-color: $link-color;
   &:hover {
-    background-color: darken($link-color, 10%);
-    border-color: darken($link-color, 10%);
+    background-color: $accent-color-hover; // Darken on hover
     color: #fff;
   }
 }
 
-// Styling for the hero content on the homepage, now that .page__hero is gone
-// This ensures your welcome message is still styled nicely without a big banner
+// Styling for the hero content on the homepage
 .hero__content {
   text-align: center;
-  padding: 2em 1em; // Reduced top/bottom padding for a more compact intro
+  padding: 0;
   max-width: 800px;
-  margin: 0 auto; // Center the content
-  // Now that the header block is removed from index.md, this section will be part of .page__content.
-  // Its background will be the .page__content background (white).
-  // No need for overlay_color property here.
-  // Any specific text colors if needed, but they should inherit from body naturally
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    color: #2c3e50; // Ensure consistency with other headings
+  margin: 0 auto;
+  h1, p.lead {
+    display: none;
   }
-  p.lead {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: $body-color; // Ensure text color is consistent
+}
+
+// --- Horizontal Projects Layout ---
+.projects-horizontal-scroll {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Snap to items */
+  padding-bottom: 1em; /* Add some padding below if scrollbar is visible */
+  margin-left: -1em; /* Adjust to align with page content if needed */
+  margin-right: -1em; /* Adjust to align with page content if needed */
+
+  .feature__item {
+    flex: 0 0 auto; /* Prevent items from shrinking, allow them to grow based on content */
+    width: 300px; /* Set a fixed width for each project item */
+    margin: 0 1em; /* Space between items */
+    scroll-snap-align: start; /* Snap to the start of each item */
+    background-color: #ffffff; // White background for each project card
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    padding: 1.5em;
+    border: 1px solid $light-border; // Soft border for each project card
+    display: flex; // Use flexbox for internal layout if needed
+    flex-direction: column; // Stack content vertically within the card
+    justify-content: space-between; // Push button to bottom
+  }
+
+  .archive__item {
+    // Ensure inner content of project cards aligns well
+    flex-grow: 1; // Allows content to take up available space
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-top: 0.5em; // Reduce top margin for titles within cards
+      margin-bottom: 0.5em;
+    }
+    p.archive__item-excerpt {
+      flex-grow: 1; // Makes sure the excerpt takes up space, pushing the button down
+      margin-bottom: 1em;
+    }
+  }
+
+  // Hide scrollbar but keep functionality for Webkit browsers (Chrome, Safari)
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  // For Firefox
+  scrollbar-width: none;
+}
+
+// Ensure proper display on smaller screens for horizontal scroll
+@media (max-width: 768px) {
+  .projects-horizontal-scroll .feature__item {
+    width: 80vw; /* Make items wider on small screens */
+    margin: 0 0.5em;
   }
 }
