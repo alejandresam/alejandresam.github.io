@@ -79,6 +79,12 @@ h1, h2, h3, h4, h5, h6 {
 // You can remove this entire commented block if you wish to further clean up the file.
 
 // --- Navigation Bar (Masthead) ---
+// --- Header/Masthead Customization (Inspired by caihanlin.com minimalist approach) ---
+// The .page__hero section is entirely removed/commented out as it's designed for large banners and conflicts with the minimalist header.
+// Keeping it commented out for reference, but it's not active.
+/* ... (commented out .page__hero styles) ... */
+
+// --- Navigation Bar (Masthead) ---
 .masthead {
   background-color: #ffffff; // White background for the navigation bar
   border-bottom: 1px solid #e0e0e0; // Subtle bottom border
@@ -104,7 +110,6 @@ h1, h2, h3, h4, h5, h6 {
     color: $link-color; // Use your primary link color on hover
   }
 }
-
 
 // --- Footer Styling ---
 .page__footer {

@@ -116,7 +116,7 @@ defaults:
       layout: "single"
       author_profile: true
       # Updated header for pages to match minimalist mint theme
-      header:
-        overlay_color: "#E0F2F1" # Light mint color for page headers
-        #overlay_filter: 0.1 # Subtle filter
-        overlay_image: "/assets/images/banner3.jpg"
+    header:
+      overlay_image: /assets/images/image_8f3550.jpg # Path to your banner image
+      overlay_color: "#000" # Or a dark color to blend with the image
+      overlay_filter: 0.5 # Adjust for desired overlay darkness

@@ -4,12 +4,8 @@ layout: home
 # author_profile: true
 ---
 
-<div class="page__content"> 
- <h1 id="welcome-to-my-personal-portfolio" style="text-align: center; margin-top: 1em; margin-bottom: 0.5em;">Welcome!</h1>
- <p class="lead" style="text-align: center; font-size: 1.2em; line-height: 1.5; color: #333;">
-   I'm Samantha Alejandre, an Electrical & Computer Engineering M.S. Student at <span style="font-weight: bold;">UCLA</span>.
-   Explore my work in Machine Learning, Data Science, and Artificial Intelligence, alongside my academic journey and personal projects.
- </p>
+<div class="page__content">
+ {# The welcome message and introduction will be managed by the theme's default settings and the tagline in _config.yml #}
 
  <h2 class="archive__item-title" style="margin-top: 2em;">Latest Blog Posts</h2>
  {# Displays up to 3 most recent blog posts #}
