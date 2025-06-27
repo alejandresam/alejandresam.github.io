@@ -64,7 +64,8 @@ markdown: kramdown
 sass:
   load_paths:
     - assets/css
-    - _sass/_custom
+    - _sass
+  style: compressed # Use compressed style for production
 
 highlighter: rouge
 permalink: /:categories/:title/
