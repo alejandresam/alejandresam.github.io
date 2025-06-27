@@ -17,7 +17,7 @@ timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_databas
 
 # Theme configuration (Minimal Mistakes specific)
 #minimal_mistakes_skin: "air" # Attempting to use the Minimal Mistakes "mint" skin
-#remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
+remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
 author:
