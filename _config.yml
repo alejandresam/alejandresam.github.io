@@ -65,7 +65,6 @@ sass:
   load_paths:
     - assets/css
     -sass\_custom
-  style: compressed # Use compressed style for production
 highlighter: rouge
 permalink: /:categories/:title/
 paginate: 5 # number of posts to show per page
