@@ -73,9 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: $warm-dark-grey; // Use warm dark grey for the site title
+  display: none; // Hide site title in masthead
 }
 
 .masthead__menu a {
@@ -153,53 +151,31 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// --- Horizontal Projects Layout ---
+// Replace horizontal projects with a grid layout
 .projects-horizontal-scroll {
-  display: flex;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scroll-snap-type: x mandatory; /* Snap to items */
-  padding-bottom: 1em; /* Add some padding below if scrollbar is visible */
-  margin-left: -1em; /* Adjust to align with page content if needed */
-  margin-right: -1em; /* Adjust to align with page content if needed */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+  padding: 0; // Remove extra horizontal scroll styling
 
   .feature__item {
-    flex: 0 0 auto; /* Prevent items from shrinking, allow them to grow based on content */
-    width: 300px; /* Set a fixed width for each project item */
-    margin: 0 1em; /* Space between items */
-    scroll-snap-align: start; /* Snap to the start of each item */
-    background-color: #ffffff; // White background for each project card
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    padding: 1.5em;
-    border: 1px solid $light-border; // Soft border for each project card
-    display: flex; // Use flexbox for internal layout if needed
-    flex-direction: column; // Stack content vertically within the card
-    justify-content: space-between; // Push button to bottom
-  }
-
-  .archive__item {
-    // Ensure inner content of project cards aligns well
-    flex-grow: 1; // Allows content to take up available space
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-
-    h3 {
-      margin-top: 0.5em; // Reduce top margin for titles within cards
-      margin-bottom: 0.5em;
-    }
-    p.archive__item-excerpt {
-      flex-grow: 1; // Makes sure the excerpt takes up space, pushing the button down
-      margin-bottom: 1em;
-    }
+    padding: 1.5em;
+    align-items: center; // Center content
   }
 
-  // Hide scrollbar but keep functionality for Webkit browsers (Chrome, Safari)
-  &::-webkit-scrollbar {
-    display: none;
+  // Example for an image at the top (optional)
+  .feature__item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1em;
   }
-  // For Firefox
-  scrollbar-width: none;
 }
 
 // Ensure proper display on smaller screens for horizontal scroll
