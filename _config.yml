@@ -64,8 +64,8 @@ markdown: kramdown
 sass:
   load_paths:
     - assets/css
-    -sass/_custom
-    
+    - _sass/_custom
+
 highlighter: rouge
 permalink: /:categories/:title/
 paginate: 5 # number of posts to show per page
