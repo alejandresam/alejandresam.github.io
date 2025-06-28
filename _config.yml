@@ -64,7 +64,8 @@ markdown: kramdown
 sass:
   load_paths:
     - assets/css
-    - _sass
+    - _sass/_custom # Custom Sass directory for your styles
+  # Use compressed style for production to reduce file size 
   style: compressed # Use compressed style for production
 
 highlighter: rouge
