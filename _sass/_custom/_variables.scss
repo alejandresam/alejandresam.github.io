@@ -1,6 +1,5 @@
 // Custom variables for Alejandra Sam's website
 // This file overrides or extends Minimal Mistakes' default variables.
-
 // -- Colors --
 $creamy-beige: #F8F4E3; // A light, warm, creamy beige for backgrounds
 $warm-dark-grey: #4A4A4A; // A soft, dark grey for body text
@@ -8,13 +7,14 @@ $accent-color: #B29D7C; // A muted, warm accent color (e.g., for links, buttons)
 $accent-color-hover: darken($accent-color, 15%); // Darken on hover
 $light-border: #E0DED7; // A soft, light border color
 
-$body-color: $warm-dark-grey; // Use the new warm dark grey for body text
+$body-color: $warm-dark-grey;
 $text-color: $warm-dark-grey;
-$link-color: $accent-color; // Use the new accent color for links
-$link-color-hover: $accent-color-hover; // Use the darkened accent for link hover
-$masthead-link-color: $warm-dark-grey; // Darker links for masthead on creamy background
-$masthead-link-color-hover: $accent-color; // Use primary accent color on hover for masthead
+$link-color: $accent-color;
+$link-color-hover: $accent-color-hover;
+$masthead-link-color: $warm-dark-grey;
+$masthead-link-color-hover: $accent-color;
 
+/
 // -- Typography (Fonts) --
 // To use a Google Font like "Open Sans", you'd typically add this to your `_includes/head/custom.html` file:
 // <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">

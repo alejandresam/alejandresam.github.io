@@ -1,0 +1,242 @@
+// Your custom CSS rules go here. This file is imported AFTER all Minimal Mistakes styles and your variables.
+
+// --- General Body & Typography ---
+body {
+  font-family: $body-font-family;
+  color: $body-color;
+  line-height: 1.6;
+  background-color: $creamy-beige;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  color: $warm-dark-grey;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2; // Tighter line height for headings
+}
+
+// Ensure overall content area feels clean
+.page__content {
+  background-color: #ffffff;
+  padding: 2.5em 3em; // Increased padding for more breathing room
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); // Lighter, softer shadow
+  margin-top: 2em; // More space from header
+  margin-bottom: 3em; // More space before footer
+  border: none; // Remove the border for a cleaner look
+}
+
+// --- Header/Masthead Customization ---
+.page__hero {
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 4em 0;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  .author__avatar {
+    border: 5px solid rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-top: 2em;
+  }
+  h1, p {
+    display: none;
+  }
+}
+
+// --- Navigation Bar (Masthead) ---
+.masthead {
+  background-color: $creamy-beige;
+  border-bottom: 1px solid $light-border;
+  padding: 1em 0;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02); // Subtle shadow for depth
+}
+
+.masthead__inner-wrap {
+  max-width: 1200px;
+  padding: 0 1.5em; // Slightly more padding
+}
+
+.site-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: $warm-dark-grey;
+}
+
+.masthead__menu a {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $warm-dark-grey;
+  padding: 0.5em 1em; // More clickable area
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+// --- Footer Styling ---
+.page__footer {
+  background-color: $creamy-beige;
+  color: $warm-dark-grey;
+  border-top: 1px solid $light-border;
+  padding: 2em 0; // More vertical padding
+}
+
+.page__footer .wrapper p {
+  color: $warm-dark-grey;
+}
+
+// --- Author Profile (on pages other than home - sidebar) ---
+.sidebar {
+  background-color: darken($creamy-beige, 2%); // Slightly darker creamy beige for sidebar, less contrast
+  padding: 1.8em; // More padding
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03); // Softer shadow
+  border: none; // Remove border for cleaner look
+}
+.author__avatar { // For sidebar avatar
+  margin-bottom: 1em;
+  border: 3px solid rgba(255,255,255,0.8); // Thinner white border
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); // Softer shadow
+}
+.author__urls-wrapper {
+  margin-top: 1em;
+}
+
+
+// Custom styles for buttons
+.btn {
+  border-radius: 5px;
+  padding: 0.75em 1.25em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.2s ease-in-out; // Smooth transition on hover
+}
+
+.btn--primary {
+  background-color: $accent-color;
+  color: #fff;
+  &:hover {
+    background-color: $accent-color-hover;
+    color: #fff;
+    transform: translateY(-2px); // Subtle lift effect
+  }
+}
+
+// Styling for the hero content on the homepage
+.hero__content {
+  text-align: center;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  h1, p.lead {
+    display: none;
+  }
+}
+
+// --- Single Project Display ---
+.projects-horizontal-scroll {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Snap to items */
+  padding: 1em 0; /* Add vertical padding around the projects */
+  margin-left: auto; /* Center the scroll container if it's narrower than its parent */
+  margin-right: auto;
+  max-width: 100%; // Ensure it doesn't overflow
+  width: 100%; // Take full available width of its container
+  box-sizing: border-box; // Include padding and border in the element's total width and height
+
+  // Hide scrollbar but keep functionality for Webkit browsers (Chrome, Safari)
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  // For Firefox
+  scrollbar-width: none;
+
+  .feature__item {
+    flex: 0 0 100%; /* Make each item take 100% of the container width */
+    max-width: 800px; // Limit max width for large screens
+    width: 100%; // Ensure it takes 100% within flex context
+    margin: 0 0.5em; /* Small space between items, for snapping effect */
+    scroll-snap-align: center; /* Snap to the center of each item */
+    background-color: #ffffff;
+    border-radius: 12px; // Slightly more rounded corners
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07); // Softer, more pronounced shadow
+    padding: 2.5em 3em; // More generous padding inside project cards
+    border: none; // Remove border
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; // Align text to left within the card
+
+    h3.archive__item-title {
+      font-size: 1.9em; // Slightly larger title for impact
+      margin-bottom: 0.8em; // More space below title
+    }
+    p.archive__item-excerpt {
+      font-size: 1.1em; // Slightly larger text for readability
+      line-height: 1.7; // Improved line height for readability
+      margin-bottom: 1.5em; // More space above button
+      flex-grow: 1;
+    }
+    .btn {
+      align-self: flex-start; // Align button to the left
+    }
+    .page__meta { // For github/demo links
+      margin-top: 1em;
+      margin-bottom: 1em; // Add space
+      font-size: 0.95em;
+      i {
+        color: $accent-color; // Color the icons
+        margin-right: 0.3em;
+      }
+      a {
+        text-decoration: underline; // Underline for clarity
+        &:hover {
+          text-decoration: none; // Remove underline on hover
+        }
+      }
+    }
+  }
+}
+
+// Adjust for responsive project items to ensure they look good on various screen sizes
+@media (min-width: 768px) {
+  .projects-horizontal-scroll .feature__item {
+    padding: 3em 4em; // Even more padding on larger screens
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-horizontal-scroll {
+    padding: 0.5em 0; // Less vertical padding on small screens
+    margin: 0 -1em; // Pull projects to screen edges more aggressively
+  }
+  .projects-horizontal-scroll .feature__item {
+    padding: 2em 1.5em; // Adjusted padding for small screens
+    margin: 0 0.5em; // Consistent small margin
+  }
+}
+
+// General clean-up for the buttons "Learn More" and "View All Projects"
+a.btn {
+    display: inline-block; // Ensure buttons maintain their size
+    text-align: center;
+    min-width: 120px; // Ensure consistent button width
+}
