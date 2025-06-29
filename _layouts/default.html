@@ -1,5 +1,20 @@
 
   <!-- Add your Swiper init script just before </body> -->
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    {%- include header.html -%}
+
+    <!-- Page content here -->
+    {{ content }}
+
+    {%- include footer.html -%}
+  
+  
+  
   <script>
     var swiper = new Swiper('.swiper-container', {
       // Swiper options here
