@@ -2,16 +2,13 @@
 // Minimal Mistakes can be thought of as creating a new file "_sass/minimal-mistakes.scss"
 // that compiles the entire theme. You are creating your own main.scss to override.
 
-// 1. Import the theme's skin first. This loads the base variables for the "air" skin.
+/// First, import the Minimal Mistakes skin (if you're using one)
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
-// 2. Import your custom variables. These will override any variables defined by the skin.
-@import "custom/variables"; // Your _sass/_custom/_variables.scss file
+// Now, import your custom variables and custom overrides.
+// Assuming your files are in _sass/custom (or _sass/_cutom if that’s the exact folder name):
+@import "custom/variables"; // loads _variables.scss from _sass/custom/
+@import "custom/custom";    // loads _custom.scss from _sass/custom/
 
-// 3. Import the main Minimal Mistakes stylesheet. This applies the theme's styles,
-//    now using your overridden variable values.
+// Then, import the main Minimal Mistakes partials (ensure these come later)
 @import "minimal-mistakes";
-
-// 4. Import your specific custom CSS rules. These will override any existing
-//    styles or add new ones, ensuring your custom rules have the highest precedence.
-@import "custom/custom"; // We will create this file for your direct CSS rules
