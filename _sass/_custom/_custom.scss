@@ -149,7 +149,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// --- Single Project Display ---
+// --- Single Project Display ---4
+.projects-horizontal {
+  display: flex;
+  flex-wrap: nowrap;      // Important: prevents wrapping
+  overflow-x: auto;       // Enables horizontal scroll
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin: 2em 0;
+}
+.projects-horizontal::-webkit-scrollbar {
+  display: none;
+}
+.projects-horizontal {
+  scrollbar-width: none;
+}
 .projects-horizontal-scroll {
   display: flex;
   overflow-x: scroll; /* Allow horizontal scrolling */
