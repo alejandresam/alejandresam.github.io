@@ -149,86 +149,46 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// --- Single Project Display ---4
-.projects-horizontal {
-  display: flex;
-  flex-wrap: nowrap;      // Important: prevents wrapping
-  overflow-x: auto;       // Enables horizontal scroll
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  margin: 2em 0;
-}
-.projects-horizontal::-webkit-scrollbar {
-  display: none;
-}
-.projects-horizontal {
-  scrollbar-width: none;
-}
-.projects-horizontal-scroll {
-  display: flex;
-  overflow-x: scroll; /* Allow horizontal scrolling */
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scroll-snap-type: x mandatory; /* Snap to items */
-  padding: 1em 0; /* Add vertical padding around the projects */
-  margin-left: auto; /* Center the scroll container if it's narrower than its parent */
-  margin-right: auto;
-  max-width: 100%; // Ensure it doesn't overflow
-  width: 100%; // Take full available width of its container
-  box-sizing: border-box; // Include padding and border in the element's total width and height
+// In your _sass/custom/_custom.scss (or wherever you include your custom styles):
 
-  // Hide scrollbar but keep functionality for Webkit browsers (Chrome, Safari)
+// Horizontal scroll container for one project at a time
+.projects-horizontal {
+  display: flex;
+  flex-wrap: nowrap;         // Prevent wrapping of projects
+  overflow-x: auto;          // Enable horizontal scrolling
+  scroll-behavior: smooth;    // Smooth scrolling when using navigation
+  scroll-snap-type: x mandatory; // Snap to items while scrolling
+  margin: 2em 0;             // Adjust vertical spacing as needed
+
   &::-webkit-scrollbar {
-    display: none;
+    display: none;           // Hide scrollbar for WebKit browsers
   }
-  // For Firefox
-  scrollbar-width: none;
+  scrollbar-width: none;     // Hide scrollbar for Firefox
+}
 
-  .feature__item {
-    flex: 0 0 100%; /* Make each item take 100% of the container width */
-    max-width: 800px; // Limit max width for large screens
-    width: 100%; // Ensure it takes 100% within flex context
-    margin: 0 0.5em; /* Small space between items, for snapping effect */
-    scroll-snap-align: center; /* Snap to the center of each item */
-    background-color: #ffffff;
-    border-radius: 12px; // Slightly more rounded corners
-    box-shadow: 0 6px 15px rgba(0,0,0,0.07); // Softer, more pronounced shadow
-    padding: 2.5em 3em; // More generous padding inside project cards
-    border: none; // Remove border
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left; // Align text to left within the card
+// Each project item takes full viewport width
+.projects-horizontal .feature__item {
+  flex: 0 0 100%;            // Force each item to occupy the full width
+  scroll-snap-align: center; // Snap each item to the center of the view
+  box-sizing: border-box;
+  padding: 2em;              // Inner spacing for better layout
+  background-color: var(--card-bg);   // Use your variable for background
+  border: 1px solid var(--border-color); // Border from your variables
+  border-radius: 5px;
+  margin: 0 1em;             // Optional margin to separate items slightly
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08); // A subtle shadow for depth
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    h3.archive__item-title {
-      font-size: 1.9em; // Slightly larger title for impact
-      margin-bottom: 0.8em; // More space below title
-    }
-    p.archive__item-excerpt {
-      font-size: 1.1em; // Slightly larger text for readability
-      line-height: 1.7; // Improved line height for readability
-      margin-bottom: 1.5em; // More space above button
-      flex-grow: 1;
-    }
-    .btn {
-      align-self: flex-start; // Align button to the left
-    }
-    .page__meta { // For github/demo links
-      margin-top: 1em;
-      margin-bottom: 1em; // Add space
-      font-size: 0.95em;
-      i {
-        color: $accent-color; // Color the icons
-        margin-right: 0.3em;
-      }
-      a {
-        text-decoration: underline; // Underline for clarity
-        &:hover {
-          text-decoration: none; // Remove underline on hover
-        }
-      }
-    }
+// Optional: Responsive tweaks if needed
+@media (max-width: 768px) {
+  .projects-horizontal .feature__item {
+    padding: 1em;
   }
 }
+
 
 // Adjust for responsive project items to ensure they look good on various screen sizes
 @media (min-width: 768px) {

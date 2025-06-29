@@ -9,7 +9,7 @@ layout: home
   <p style="text-align: center;">Explore key projects in machine learning, data science, and AI.</p>
 
   <!-- One-project-at-a-time horizontal layout -->
-  <div class="projects-horizontal-scroll">
+  <div class="projects-horizontal">
     <div class="feature__item">
       <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
       <h3 class="archive__item-title">
