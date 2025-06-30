@@ -16,7 +16,7 @@ repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo na
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Theme configuration (Minimal Mistakes specific)
-#minimal_mistakes_skin: "air" # Attempting to use the Minimal Mistakes "mint" skin
+title: "Samantha Alejandre" #minimal_mistakes_skin: "air" # Attempting to use the Minimal Mistakes "mint" skin
 remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
 
 # Site Author Information
@@ -63,8 +63,9 @@ navigation:
 markdown: kramdown
 sass:
   load_paths:
+    - _sass 
     - assets/css
-    - _sass # Custom Sass directory for your styles
+    # Custom Sass directory for your styles
   # Use compressed style for production to reduce file size 
 
 highlighter: rouge
@@ -123,6 +124,6 @@ defaults:
       author_profile: true
       # Updated header for pages to match minimalist mint theme
     header:
-      overlay_image: /assets/images/banner3.jpg # Path to your banner image
+      #overlay_image: /assets/images/banner3.jpg # Path to your banner image
       #overlay_color: "#000" # Or a dark color to blend with the image
       overlay_filter: 0.5 # Adjust for desired overlay darkness
