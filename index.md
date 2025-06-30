@@ -23,6 +23,5 @@ layout: home
     </div>
   </div>
 
-</div>
 
 </div>
