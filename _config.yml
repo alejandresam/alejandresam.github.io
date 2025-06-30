@@ -1,10 +1,4 @@
-# Site settings
-# These are used to personalize your new site. If you look in _sass/variables.scss, you will see how these are used.
-#
-# Minimal Mistakes is a popular Jekyll theme, and we'll start with its base
-# features and then customize it to your liking.
 
-# Basic Site Information
 
 tagline: "Electrical & Computer Engineering M.S. Student | Machine Learning Researcher" # Consistent with your about page
 description: >- # this means to ignore newlines until "baseurl:"
@@ -104,17 +98,7 @@ exclude:
 # Defaults
 # These are crucial for applying layouts and other settings automatically to your content.
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single"
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+  
   # _pages
   - scope:
       path: ""
