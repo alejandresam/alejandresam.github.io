@@ -151,35 +151,28 @@ h1, h2, h3, h4, h5, h6 {
 
 // In your _sass/custom/_custom.scss (or wherever you include your custom styles):
 
-// Horizontal scroll container for one project at a time
-.projects-horizontal {
-  display: flex;
-  flex-wrap: nowrap;         // Prevent wrapping of projects
-  overflow-x: auto;          // Enable horizontal scrolling
-  scroll-behavior: smooth;    // Smooth scrolling when using navigation
-  scroll-snap-type: x mandatory; // Snap to items while scrolling
-  margin: 2em 0;             // Adjust vertical spacing as needed
+// --- Projects Section Styles ---
+.projects-vertical {
+  .feature__item {
+    display: flex;        // Put image & text side by side
+    flex-wrap: wrap;      // Allows text to wrap under image if screen is too narrow
+    margin-bottom: 2em;   // Space between projects
 
-  &::-webkit-scrollbar {
-    display: none;           // Hide scrollbar for WebKit browsers
+    .feature__image {
+      flex: 0 0 250px;    // Image container width
+      max-width: 100%;
+      margin-right: 1em;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+    .feature__content {
+      flex: 1;            // Let the text area grow
+    }
   }
-  scrollbar-width: none;     // Hide scrollbar for Firefox
-}
-
-// Each project item takes full viewport width
- .feature__item {
-  flex: 0 0 100%;            // Force each item to occupy the full width
-  scroll-snap-align: center; // Snap each item to the center of the view
-  box-sizing: border-box;
-  padding: 2em;              // Inner spacing for better layout
-  background-color: var(--card-bg);   // Use your variable for background
-  border: 1px solid var(--border-color); // Border from your variables
-  border-radius: 5px;
-  margin: 0 1em;             // Optional margin to separate items slightly
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08); // A subtle shadow for depth
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 // Optional: Responsive tweaks if needed
