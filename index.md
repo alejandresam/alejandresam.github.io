@@ -22,6 +22,10 @@ list_title: "Recent Posts"
       </div>
     </div>
 
+    
+    </div>
+    <div class="projects-vertical">
+
     <!-- Project #2 -->
     <div class="feature__item">
       <div class="feature__image">
@@ -33,19 +37,9 @@ list_title: "Recent Posts"
         <a href="/projects/#semg-keystroke-decoder" class="btn btn--primary">Learn More →</a>
       </div>
     </div>
-
-    <!-- Project #3 -->
-    <div class="feature__item">
-      <div class="feature__image">
-        <img src="/assets/images/changebot.jpg" alt="ChangeBot" />
-      </div>
-      <div class="feature__content">
-        <h3>ChangeBot</h3>
-        <p>RAG-based chatbot automating email responses, reducing bounce rates by 33%.</p>
-        <a href="/projects/#changebot" class="btn btn--primary">Learn More →</a>
-      </div>
-    </div>
-
   </div>
+    
+  </div>
+
 
 </div>
