@@ -1,21 +1,24 @@
+```markdown
+<!-- filepath: c:\Users\appli\OneDrive\Documents\GitHub\alejandresam.github.io\index.md -->
 ---
 layout: home
 title: "Welcome to My Site"
-list_title:    # leave blank to remove "Recent Posts" heading
-entries_layout: none  # hides grid/list of posts
-show_excerpts: false  # ensure no post excerpts appear
+list_title:    # This being blank removes the "Recent Posts" heading
+entries_layout: none  # This hides the default post list/grid
+show_excerpts: false
+author_profile: false
 ---
-
 
 <div class="page__content">
   <h2 style="text-align:center;">Featured Projects</h2>
 
-  <!-- Projects list container -->
+  <!-- This is the main container for your projects -->
   <div class="projects-list">
+
     <!-- Project 1 -->
     <div class="feature__item">
       <div class="feature__image">
-        <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer"/>
+        <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
       </div>
       <div class="feature__content">
         <h3>Chess RL Transformer</h3>
@@ -27,7 +30,7 @@ show_excerpts: false  # ensure no post excerpts appear
     <!-- Project 2 -->
     <div class="feature__item">
       <div class="feature__image">
-        <img src="/assets/images/semg-keystroke.jpg" alt="SEMG Keystroke Decoder"/>
+        <img src="/assets/images/semg-keystroke.jpg" alt="SEMG Keystroke Decoder" />
       </div>
       <div class="feature__content">
         <h3>SEMG Keystroke Decoder</h3>
@@ -39,7 +42,7 @@ show_excerpts: false  # ensure no post excerpts appear
     <!-- Project 3 -->
     <div class="feature__item">
       <div class="feature__image">
-        <img src="/assets/images/changebot.jpg" alt="ChangeBot"/>
+        <img src="/assets/images/changebot.jpg" alt="ChangeBot" />
       </div>
       <div class="feature__content">
         <h3>ChangeBot</h3>
@@ -47,5 +50,7 @@ show_excerpts: false  # ensure no post excerpts appear
         <a href="/projects/#changebot" class="btn btn--primary">Learn More →</a>
       </div>
     </div>
+
   </div>
 </div>
+```
