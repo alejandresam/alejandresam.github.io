@@ -204,23 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-// Adjust for responsive project items to ensure they look good on various screen sizes
-@media (min-width: 768px) {
-  .projects-horizontal-scroll .feature__item {
-    padding: 3em 4em; // Even more padding on larger screens
-  }
-}
 
-@media (max-width: 768px) {
-  .projects-horizontal-scroll {
-    padding: 0.5em 0; // Less vertical padding on small screens
-    margin: 0 -1em; // Pull projects to screen edges more aggressively
-  }
-  .projects-horizontal-scroll .feature__item {
-    padding: 2em 1.5em; // Adjusted padding for small screens
-    margin: 0 0.5em; // Consistent small margin
-  }
-}
 
 // General clean-up for the buttons "Learn More" and "View All Projects"
 a.btn {
