@@ -150,64 +150,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* ----------  Home-page project list  ---------- */
+
 .projects-list {
-  .feature__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center; // Vertically align image and text
-    background-color: #fff; // Use a solid color for the card background
-    border: 1px solid $light-border; // Use your defined Sass variable
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-    }
-
-    .feature__image {
-      flex: 0 0 250px;
-      margin-right: 2rem; // Increased space between image and text
-
-      img {
-        max-width: 100%;
-        border-radius: 6px; // Slightly rounded corners for the image
-      }
-    }
-
-    .feature__content {
-      flex: 1;
-
-      h3 {
-        margin-top: 0;
-        font-size: 1.4em; // Make title stand out more
-      }
-
-      p {
-        margin-bottom: 1.2em; // Space between description and button
-      }
-    }
-  }
+  display: flex;          // stack children vertically
+  flex-direction: column;
+  gap: 2rem;              // space between cards
+  margin: 0;              // kill any theme grid margins
 }
 
-// Responsive tweak for smaller screens
-@media (max-width: 768px) {
-  .projects-list .feature__item {
-    flex-direction: column;
-    align-items: flex-start;
-
-    .feature__image {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 1.5rem;
-    }
-  }
+.feature__item {
+  display: flex;
+  align-items: flex-start; // image + text stay top-aligned
+  border-bottom: 1px solid #e5e7eb;  // light divider
+  padding-bottom: 1.5rem;
 }
 
-// ...existing code...
+.feature__image {
+  flex: 0 0 180px;        // fixed thumbnail width
+  margin-right: 1.5rem;
+}
+
+.feature__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+.feature__content {
+  flex: 1 1 auto;         // text fills remaining width
+}
+
+/* --- mobile tweak: stack image over text --- */
+@media (max-width: 640px) {
+  .feature__item   { flex-direction: column; }
+  .feature__image  { width: 100%; margin: 0 0 1rem 0; }
+}
 
 
 
