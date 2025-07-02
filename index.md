@@ -1,7 +1,6 @@
 ---
 layout: home
 title: "Welcome to My Site"
-list_title: "Recent Posts"
 ---
 
 <div class="page__content">
@@ -13,7 +12,7 @@ list_title: "Recent Posts"
     <!-- Project #1 -->
     <div class="feature__item">
       <div class="feature__image">
-        <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
+        <img src="/assets/images/chess-rl.png" alt="Chess RL Transformer" />
       </div>
       <div class="feature__content">
         <h3>Chess RL Transformer</h3>
@@ -41,5 +40,3 @@ list_title: "Recent Posts"
     
   </div>
 
-
-</div>
