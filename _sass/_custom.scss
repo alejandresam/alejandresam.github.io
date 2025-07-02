@@ -150,44 +150,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ----------  Home-page project list  ---------- */
-
+/* --- kill the theme’s float grid so every card sits on its own row --- */
 .projects-list {
-  display: flex;          // stack children vertically
-  flex-direction: column;
-  gap: 2rem;              // space between cards
-  margin: 0;              // kill any theme grid margins
+  /* keeps the vertical stack and gap you already defined */
 }
 
-.feature__item {
-  display: flex;
-  align-items: flex-start; // image + text stay top-aligned
-  border-bottom: 1px solid #e5e7eb;  // light divider
-  padding-bottom: 1.5rem;
+.projects-list > .feature__item {
+  float: none !important;          // override the theme’s float
+  width: 100% !important;          // take the full row
+  margin-left: 0 !important;       // wipe out the theme’s gutter
+  display: flex;                   // your flexbox row
+  align-items: flex-start;
+  gap: 1.5rem;                     // space between image and text
 }
 
-.feature__image {
-  flex: 0 0 180px;        // fixed thumbnail width
-  margin-right: 1.5rem;
+/* (optional) tighter spacing between cards */
+.projects-list > .feature__item + .feature__item {
+  margin-top: 2rem;
 }
 
-.feature__image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
-}
-
-.feature__content {
-  flex: 1 1 auto;         // text fills remaining width
-}
-
-/* --- mobile tweak: stack image over text --- */
-@media (max-width: 640px) {
-  .feature__item   { flex-direction: column; }
-  .feature__image  { width: 100%; margin: 0 0 1rem 0; }
-}
 
 
 
