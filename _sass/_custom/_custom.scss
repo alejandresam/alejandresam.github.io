@@ -149,58 +149,65 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// In your _sass/custom/_custom.scss (or wherever you include your custom styles):
 
 .projects-list {
   .feature__item {
     display: flex;
-    flex-direction: row;    // Image on the left, contents on the right
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    margin-bottom: 2rem;    // Spacing between projects
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    padding: 1.5rem;        // Inner padding for a cleaner appearance
-    
+    flex-direction: row;
+    align-items: center; // Vertically align image and text
+    background-color: #fff; // Use a solid color for the card background
+    border: 1px solid $light-border; // Use your defined Sass variable
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+
     .feature__image {
-      flex: 0 0 250px;      // Fixed width for the image column
-      margin-right: 1.5rem; // Space between image and text
-      
+      flex: 0 0 250px;
+      margin-right: 2rem; // Increased space between image and text
+
       img {
         max-width: 100%;
-        border-radius: 4px;
+        border-radius: 6px; // Slightly rounded corners for the image
       }
     }
-    
+
     .feature__content {
-      flex: 1;             // Allow content to take remaining space
-      display: flex;
-      flex-direction: column;
-      justify-content: center; // Vertically center text if desired
-      
+      flex: 1;
+
       h3 {
         margin-top: 0;
+        font-size: 1.4em; // Make title stand out more
+      }
+
+      p {
+        margin-bottom: 1.2em; // Space between description and button
       }
     }
   }
 }
 
-// Responsive tweak: stack image above text on smaller screens
+// Responsive tweak for smaller screens
 @media (max-width: 768px) {
   .projects-list .feature__item {
     flex-direction: column;
     align-items: flex-start;
-    
+
     .feature__image {
       width: 100%;
       margin-right: 0;
-      margin-bottom: 1rem; // Space below image
-    }
-    .feature__content {
-      width: 100%;
+      margin-bottom: 1.5rem;
     }
   }
 }
+
+// ...existing code...
 
 
 
