@@ -151,9 +151,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* --- kill the theme’s float grid so every card sits on its own row --- */
-.projects-list {
-  /* keeps the vertical stack and gap you already defined */
-}
 
 .projects-list > .feature__item {
   float: none !important;          // override the theme’s float
