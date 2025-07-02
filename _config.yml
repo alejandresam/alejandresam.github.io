@@ -60,6 +60,8 @@ sass:
     - _sass 
     - assets/css
     # Custom Sass directory for your styles
+sass_dir: _sass # Directory for Sass files
+style: compressed # Use compressed style for production to reduce file size
   # Use compressed style for production to reduce file size 
 
 highlighter: rouge
