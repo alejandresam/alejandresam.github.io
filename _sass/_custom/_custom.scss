@@ -151,36 +151,57 @@ h1, h2, h3, h4, h5, h6 {
 
 // In your _sass/custom/_custom.scss (or wherever you include your custom styles):
 
-// --- Projects Section Styles ---
-.projects-vertical {
+.projects-list {
   .feature__item {
-    display: flex;        // Put image & text side by side
-    flex-wrap: wrap;      // Allows text to wrap under image if screen is too narrow
-    margin-bottom: 2em;   // Space between projects
-
+    display: flex;
+    flex-direction: row;    // Image on the left, contents on the right
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 2rem;    // Spacing between projects
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    padding: 1.5rem;        // Inner padding for a cleaner appearance
+    
     .feature__image {
-      flex: 0 0 250px;    // Image container width
-      max-width: 100%;
-      margin-right: 1em;
+      flex: 0 0 250px;      // Fixed width for the image column
+      margin-right: 1.5rem; // Space between image and text
+      
+      img {
+        max-width: 100%;
+        border-radius: 4px;
+      }
     }
-
-    img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-
+    
     .feature__content {
-      flex: 1;            // Let the text area grow
+      flex: 1;             // Allow content to take remaining space
+      display: flex;
+      flex-direction: column;
+      justify-content: center; // Vertically center text if desired
+      
+      h3 {
+        margin-top: 0;
+      }
     }
   }
 }
 
-// Optional: Responsive tweaks if needed
+// Responsive tweak: stack image above text on smaller screens
 @media (max-width: 768px) {
-  .projects-horizontal .feature__item {
-    padding: 1em;
+  .projects-list .feature__item {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .feature__image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem; // Space below image
+    }
+    .feature__content {
+      width: 100%;
+    }
   }
 }
+
 
 
 // Adjust for responsive project items to ensure they look good on various screen sizes
