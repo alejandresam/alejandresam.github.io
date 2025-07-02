@@ -150,25 +150,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* --- kill the theme’s float grid so every card sits on its own row --- */
+// --- Projects List Section ---
+.projects-list {
+  .feature__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid $light-border;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-.projects-list > .feature__item {
-  float: none !important;          // override the theme’s float
-  width: 100% !important;          // take the full row
-  margin-left: 0 !important;       // wipe out the theme’s gutter
-  display: flex;                   // your flexbox row
-  align-items: flex-start;
-  gap: 1.5rem;                     // space between image and text
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+
+    .feature__image {
+      flex: 0 0 250px;
+      margin-right: 2rem;
+
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+    }
+
+    .feature__content {
+      flex: 1;
+
+      h3 {
+        margin-top: 0;
+        font-size: 1.4em;
+      }
+
+      p {
+        margin-bottom: 1.2em;
+      }
+    }
+  }
 }
 
-/* (optional) tighter spacing between cards */
-.projects-list > .feature__item + .feature__item {
-  margin-top: 2rem;
-}
+// Responsive tweak for smaller screens
+@media (max-width: 768px) {
+  .projects-list .feature__item {
+    flex-direction: column;
+    align-items: flex-start;
 
-
-
-
+    .feature__image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  
 
 
 // General clean-up for the buttons "Learn More" and "View All Projects"
@@ -176,4 +213,6 @@ a.btn {
     display: inline-block; // Ensure buttons maintain their size
     text-align: center;
     min-width: 120px; // Ensure consistent button width
-}
+  }
+} // <-- Close the @media (max-width: 768px) block  
+} // <-- Close the main CSS block
