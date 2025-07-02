@@ -1,5 +1,4 @@
-```markdown
-<!-- filepath: c:\Users\appli\OneDrive\Documents\GitHub\alejandresam.github.io\index.md -->
+
 ---
 layout: home
 title: "Welcome to My Site"
@@ -53,4 +52,3 @@ author_profile: false
 
   </div>
 </div>
-```
