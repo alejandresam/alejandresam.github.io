@@ -11,7 +11,6 @@ author_profile: true
   <h2 style="text-align:center;">Featured Projects</h2>
 
   <!-- This is the main container for your projects -->
-  <div class="projects-list">
 
     <!-- Project 1 -->
     <div class="feature__item">
@@ -50,4 +49,3 @@ author_profile: true
     </div>
 
   </div>
-</div>
