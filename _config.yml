@@ -60,8 +60,7 @@ sass:
     - _sass 
     - assets/css
     # Custom Sass directory for your styles
-sass_dir: _sass # Directory for Sass files
-style: compressed # Use compressed style for production to reduce file size
+    
   # Use compressed style for production to reduce file size 
 
 highlighter: rouge
@@ -99,17 +98,3 @@ exclude:
 
 # Defaults
 # These are crucial for applying layouts and other settings automatically to your content.
-defaults:
-  
-  # _pages
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
-      # Updated header for pages to match minimalist mint theme
-    header:
-      #overlay_image: /assets/images/banner3.jpg # Path to your banner image
-      #overlay_color: "#000" # Or a dark color to blend with the image
-      overlay_filter: 0.5 # Adjust for desired overlay darkness
