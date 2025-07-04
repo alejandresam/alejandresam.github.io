@@ -1,52 +1,60 @@
 ---
-layout: home
 layout: single
-title: "Welcome to My Site"
-list_title: none   # This being blank removes the "Recent Posts" heading
-entries_layout: none  # This hides the default post list/grid
-show_excerpts: false
 author_profile: true
 ---
 
-<div class="page__content">
-  <h2 style="text-align:center;">Featured Projects</h2>
+<div id="about" class="section">
+  <h2>About Me</h2>
+  <p>Welcome to my personal corner of the internet! I am a passionate Electrical Computing Engineer M.S. Student and Researcher with an interest in Machine Learning, Data Science, and Artificial Intelligence.</p>
+  <p>I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. During my studies, I focused on artificial intelligence and data structures. My undergraduate thesis was on "[Thesis Title]".</p>
+  <p>Currently, I am a PhD student at UCLA, working on my research, which aims to [explain the goal/impact of your work].</p>
+</div>
 
-  <!-- This is the main container for your projects -->
-
-    <!-- Project 1 -->
-    <div class="feature__item">
-      <div class="feature__image">
-        <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
-      </div>
-      <div class="feature__content">
+<div id="projects" class="section">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
+      <div class="project-content">
         <h3>Chess RL Transformer</h3>
-        <p>Autoregressive transformer for chess moves with 98%+ accuracy.</p>
-        <a href="/projects/#chess-rl-transformer" class="btn btn--primary">Learn More →</a>
+        <p>Autoregressive transformer for chess move prediction with 98%+ accuracy.</p>
+        <a href="#" class="btn btn--primary">Learn More</a>
       </div>
     </div>
-
-    <!-- Project 2 -->
-    <div class="feature__item">
-      <div class="feature__image">
-        <img src="/assets/images/semg-keystroke.jpg" alt="SEMG Keystroke Decoder" />
-      </div>
-      <div class="feature__content">
+    <div class="project-card">
+      <img src="/assets/images/semg-keystroke.jpg" alt="SEMG Keystroke Decoder" />
+      <div class="project-content">
         <h3>SEMG Keystroke Decoder</h3>
         <p>Deep learning model for SEMG-based keystroke decoding.</p>
-        <a href="/projects/#semg-keystroke-decoder" class="btn btn--primary">Learn More →</a>
+        <a href="#" class="btn btn--primary">Learn More</a>
       </div>
     </div>
-
-    <!-- Project 3 -->
-    <div class="feature__item">
-      <div class="feature__image">
-        <img src="/assets/images/changebot.jpg" alt="ChangeBot" />
-      </div>
-      <div class="feature__content">
+    <div class="project-card">
+      <img src="/assets/images/changebot.jpg" alt="ChangeBot" />
+      <div class="project-content">
         <h3>ChangeBot</h3>
         <p>RAG-based chatbot automating email responses and reducing bounce rates by 33%.</p>
-        <a href="/projects/#changebot" class="btn btn--primary">Learn More →</a>
+        <a href="#" class="btn btn--primary">Learn More</a>
       </div>
     </div>
-
   </div>
+</div>
+
+<div id="publications" class="section">
+  <h2>Publications</h2>
+  <p>This page lists my academic publications. You can find my full list of publications on Google Scholar and DBLP.</p>
+  <ul>
+    <li>
+      <strong>[Year] "Full Title of Journal Article Here"</strong><br>
+      <em>Authors: Your Name, Co-Author A, Co-Author B</em><br>
+      Journal: Journal Name, Vol(Issue): Pages.<br>
+      <a href="#">PDF</a> | <a href="#">Abstract</a> | <a href="#">Code</a> | <a href="#">Data</a>
+    </li>
+    <li>
+      <strong>[Year] "Full Title of Conference Paper Here" (Conference Name)</strong><br>
+      <em>Authors: Your Name, Co-Author P, Co-Author Q</em><br>
+      Conference: Proceedings of [Full Conference Name] ([Acronym]).<br>
+      <a href="#">PDF</a> | <a href="#">Presentation</a> | <a href="#">Video</a>
+    </li>
+  </ul>
+</div>
