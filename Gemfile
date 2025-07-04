@@ -10,6 +10,8 @@ gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jekyll-include-cache"
+gem "jekyll-seo-tag"
+
 
 # Add your plugins
 gem "jekyll-scholar"
