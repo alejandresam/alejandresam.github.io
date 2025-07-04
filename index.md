@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Welcome to My Site"
-list_title: ""   # This being blank removes the "Recent Posts" heading
+list_title: none   # This being blank removes the "Recent Posts" heading
 entries_layout: none  # This hides the default post list/grid
 show_excerpts: false
 author_profile: true

@@ -7,7 +7,6 @@ on:
       - main  # Or 'master' if that is your default branch
 permissions:
   contents: write
-  
 jobs:
   build:
     runs-on: ubuntu-latest
