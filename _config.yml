@@ -65,8 +65,8 @@ sass:
 
 highlighter: rouge
 permalink: /:categories/:title/
-paginate: 5 # number of posts to show per page
-paginate_path: /page:num/
+#paginate: 5 # number of posts to show per page
+#paginate_path: /page:num/
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
