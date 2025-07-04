@@ -11,7 +11,7 @@ gem "jekyll-gist"
 gem "jekyll-feed"
 gem "jekyll-include-cache"
 gem "jekyll-seo-tag"
-
+gem "jekyll-last-modified-at"
 
 # Add your plugins
 gem "jekyll-scholar"
