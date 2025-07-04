@@ -1,15 +1,9 @@
 main:
-  - title: "Home" # Added Home link as the first item
-    url: /
   - title: "About"
-    url: /about/
+    url: /#about
   - title: "Projects"
-    url: /projects/
+    url: /#projects
   - title: "Publications"
-    url: /publications/
-  - title: "Blog"
-    url: /blog/
-  - title: "Hobbies" # We will create this page later for your baking section
-    url: /hobbies/
+    url: /#publications
   - title: "CV"
-    url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf # Link directly to your PDF
+    url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf
