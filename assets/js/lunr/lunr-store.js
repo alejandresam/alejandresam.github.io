@@ -1,6 +1,6 @@
 var store = [{
         "title": "My First Post",
-        "excerpt":"— # Add the closing — for front matter layout: single # Corrected ‘ayout’ to ‘layout’ title: “Setting Up My New Personal Website!” date: 2025-06-21 18:00:00 -0700 categories: [Website, Jekyll, GitHub Pages] tags: [personal-website, github-pages, jekyll, minimal-mistakes] — # Add the closing — for front matter Welcome to my brand...","categories": [],
+        "excerpt":"This site is powered by Jekyll and built on the highly versatile Minimal Mistakes theme. I chose this combination for its flexibility, robust features, and excellent support for GitHub Pages. My aim is to create a clean, modern, and informative platform to showcase my academic journey, research, projects, and insights....","categories": [],
         "tags": [],
         "url": "/my-first-post/",
         "teaser": null
