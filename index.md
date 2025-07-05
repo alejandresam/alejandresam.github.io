@@ -6,15 +6,14 @@ author_profile: true
 <div id="about" class="section">
   <h2>About Me</h2>
   <p>Welcome to my personal corner of the internet! I am a passionate Electrical Computing Engineer M.S. Student and Researcher with an interest in Machine Learning, Data Science, and Artificial Intelligence.</p>
-  <p>I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. During my studies, I focused on artificial intelligence and data structures. My undergraduate thesis was on "[Thesis Title]".</p>
-  <p>Currently, I am a PhD student at UCLA, working on my research, which aims to [explain the goal/impact of your work].</p>
+  <p>I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. During my studies, I focused on artificial intelligence and data structures. Currently, I am a M.S. student at UCLA, working on my research, which aims to [explain the goal/impact of your work].</p>
 </div>
 
 <div id="projects" class="section">
   <h2>Featured Projects</h2>
   <div class="projects-grid">
     <div class="project-card">
-      <img src="/assets/images/chess-rl.jpg" alt="Chess RL Transformer" />
+      <img src="/assets/images/chess-rl.png" alt="Chess RL Transformer" />
       <div class="project-content">
         <h3>Chess RL Transformer</h3>
         <p>Autoregressive transformer for chess move prediction with 98%+ accuracy.</p>
