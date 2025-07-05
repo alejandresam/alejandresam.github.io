@@ -2,7 +2,7 @@
 
 
 // 1. Import the theme's skin.
-@import "minimal-mistakes/skins/default"; // Or your preferred skin
+@import "minimal-mistakes/skins/mint"; // Or your preferred skin
 
 // 2. Import your custom variables. This MUST come after the skin
 //    but BEFORE the main theme file.
@@ -15,3 +15,4 @@
 // 4. Import your custom CSS rules. This MUST come last so it can
 //    override the theme's default styles.
 @import "custom/custom";
+
