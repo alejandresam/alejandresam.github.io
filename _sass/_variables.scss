@@ -18,12 +18,19 @@ $masthead-link-color-hover: $accent-color;
 // -- Typography (Fonts) --
 // To use a Google Font like "Open Sans", you'd typically add this to your `_includes/head/custom.html` file:
 // <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+// Find these lines and update them:
+
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol";
 
+// You might need to change $header-font-family or add it if it's not there.
+$header-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Ensure these lines are using the new variables
 $base-font-family: $font-family-sans-serif;
-$header-font-family: $font-family-sans-serif;
 $body-font-family: $font-family-sans-serif;
 // -- Spacing --
 $gutter: 1.5em; // Standard spacing unit
