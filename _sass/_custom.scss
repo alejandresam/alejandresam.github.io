@@ -215,4 +215,56 @@ a.btn {
     min-width: 120px; // Ensure consistent button width
   }
 } // <-- Close the @media (max-width: 768px) block  
-} // <-- Close the main CSS block
+
+// ... (keep all your existing custom styles)
+
+// Add these new styles at the end of the file
+
+.section {
+  padding: 3em 0;
+  border-bottom: 1px solid $light-border;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-content {
+    padding: 1.5em;
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+#publications ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 1.5em;
+  }
+}
+}
+// <-- Close the main CSS block
