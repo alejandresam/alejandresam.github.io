@@ -1,6 +1,7 @@
-// Your custom CSS rules go here. This file is imported AFTER all Minimal Mistakes styles and your variables.
+/* =============================================================================
+   1. General & Foundational Styles
+   ========================================================================== */
 
-// --- General Body & Typography ---
 body {
   font-family: $body-font-family;
   color: $body-color;
@@ -8,66 +9,53 @@ body {
   background-color: $creamy-beige;
 }
 
+/* Typography & Hierarchy */
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
   color: $warm-dark-grey;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  line-height: 1.2; // Tighter line height for headings
 }
 
-// Ensure overall content area feels clean
+h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  border-bottom: 2px solid $accent-color;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+/* =============================================================================
+   2. Main Layout Components
+   ========================================================================== */
+
+/* Page Content Wrapper */
 .page__content {
   background-color: #ffffff;
-  padding: 2.5em 3em; // Increased padding for more breathing room
+  padding: 2.5em 3em;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); // Lighter, softer shadow
-  margin-top: 2em; // More space from header
-  margin-bottom: 3em; // More space before footer
-  border: none; // Remove the border for a cleaner look
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-top: 2em;
+  margin-bottom: 3em;
+  border: none;
 }
 
-// --- Header/Masthead Customization ---
-.page__hero {
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  padding: 4em 0;
-  position: relative;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 250px;
-  .author__avatar {
-    border: 5px solid rgba(255,255,255,0.8);
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 0;
-    margin-top: 2em;
-  }
-  h1, p {
-    display: none;
-  }
-}
-
-// --- Navigation Bar (Masthead) ---
+/* Navigation Bar (Masthead) */
 .masthead {
   background-color: $creamy-beige;
   border-bottom: 1px solid $light-border;
   padding: 1em 0;
   z-index: 10;
   position: relative;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.02); // Subtle shadow for depth
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
 .masthead__inner-wrap {
   max-width: 1200px;
-  padding: 0 1.5em; // Slightly more padding
+  padding: 0 1.5em;
 }
 
 .site-title {
@@ -80,165 +68,48 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   text-transform: uppercase;
   color: $warm-dark-grey;
-  padding: 0.5em 1em; // More clickable area
+  padding: 0.5em 1em;
   &:hover {
     color: $accent-color;
   }
 }
 
-// --- Footer Styling ---
+/* Author Profile Sidebar */
+.sidebar {
+  background-color: darken($creamy-beige, 2%);
+  padding: 1.8em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  border: none;
+}
+
+.author__avatar {
+  margin-bottom: 1em;
+  border: 3px solid rgba(255,255,255,0.8);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.author__urls-wrapper {
+  margin-top: 1em;
+}
+
+/* Footer */
 .page__footer {
   background-color: $creamy-beige;
   color: $warm-dark-grey;
   border-top: 1px solid $light-border;
-  padding: 2em 0; // More vertical padding
+  padding: 2em 0;
 }
 
 .page__footer .wrapper p {
   color: $warm-dark-grey;
 }
 
-// --- Author Profile (on pages other than home - sidebar) ---
-.sidebar {
-  background-color: darken($creamy-beige, 2%); // Slightly darker creamy beige for sidebar, less contrast
-  padding: 1.8em; // More padding
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.03); // Softer shadow
-  border: none; // Remove border for cleaner look
-}
-.author__avatar { // For sidebar avatar
-  margin-bottom: 1em;
-  border: 3px solid rgba(255,255,255,0.8); // Thinner white border
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); // Softer shadow
-}
-.author__urls-wrapper {
-  margin-top: 1em;
-}
+/* =============================================================================
+   3. Page Section Styles
+   ========================================================================== */
 
-
-// Custom styles for buttons
-.btn {
-  border-radius: 5px;
-  padding: 0.75em 1.25em;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  border: none;
-  transition: all 0.2s ease-in-out; // Smooth transition on hover
-}
-
-.btn--primary {
-  background-color: $accent-color;
-  color: #fff;
-  &:hover {
-    background-color: $accent-color-hover;
-    color: #fff;
-    transform: translateY(-2px); // Subtle lift effect
-  }
-}
-
-// Styling for the hero content on the homepage
-.hero__content {
-  text-align: center;
-  padding: 0;
-  max-width: 800px;
-  margin: 0 auto;
-  h1, p.lead {
-    display: none;
-  }
-}
-
-
-// --- Projects List Section ---
-.projects-list {
-  .feature__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #fff;
-    border: 1px solid $light-border;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-    }
-
-    .feature__image {
-      flex: 0 0 250px;
-      margin-right: 2rem;
-
-      img {
-        max-width: 100%;
-        border-radius: 6px;
-      }
-    }
-
-    .feature__content {
-      flex: 1;
-
-      h3 {
-        margin-top: 0;
-        font-size: 1.4em;
-      }
-
-      p {
-        margin-bottom: 1.2em;
-      }
-    }
-  }
-}
-
-// Responsive tweak for smaller screens
-@media (max-width: 768px) {
-  .projects-list .feature__item {
-    flex-direction: column;
-    align-items: flex-start;
-
-    .feature__image {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 1.5rem;
-    }
-  
-
-
-// General clean-up for the buttons "Learn More" and "View All Projects"
-a.btn {
-    display: inline-block; // Ensure buttons maintain their size
-    text-align: center;
-    min-width: 120px; // Ensure consistent button width
-  }
-} // <-- Close the @media (max-width: 768px) block  
-
-// ... (keep all your existing custom styles)
-
-// Add these new styles at the end of the file
-
-// ... (keep your existing custom styles)
-
-// Typography Hierarchy
-h2 {
-  font-family: $header-font-family;
-  font-size: 2.5em; // Larger size for section titles
-  font-weight: 700;
-  border-bottom: 2px solid $accent-color;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-family: $header-font-family;
-  font-size: 1.75em; // Larger size for project/job titles
-  font-weight: 700;
-}
-
-// New Project Layout Styles
+/* Projects Section */
 .project-item-alternating {
   display: flex;
   align-items: center;
@@ -250,7 +121,7 @@ h3 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 
   .project-image {
-    flex: 1 1 40%; // Image takes up 40% of the width
+    flex: 1 1 40%;
     img {
       width: 100%;
       border-radius: 6px;
@@ -258,18 +129,19 @@ h3 {
   }
 
   .project-details {
-    flex: 1 1 60%; // Details take up 60% of the width
+    flex: 1 1 60%;
   }
 
-  // Alternating layout: every 2nd project item reverses the order
+  // Alternating layout
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
 
-// Work Experience Section
+/* Work Experience Section */
 .experience-item {
   margin-bottom: 2em;
+
   .experience-header {
     h3 {
       margin-bottom: 0.1em;
@@ -280,6 +152,7 @@ h3 {
       margin-bottom: 1em;
     }
   }
+
   ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -289,8 +162,39 @@ h3 {
   }
 }
 
+/* =============================================================================
+   4. UI Elements
+   ========================================================================== */
 
-// Responsive adjustments for smaller screens
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  padding: 0.75em 1.25em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+}
+
+.btn--primary {
+  background-color: $accent-color;
+  color: #fff;
+  &:hover {
+    background-color: $accent-color-hover;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+}
+
+/* =============================================================================
+   5. Responsive Design
+   ========================================================================== */
+
 @media (max-width: 768px) {
   .project-item-alternating {
     flex-direction: column !important; // Stack items vertically
@@ -300,5 +204,3 @@ h3 {
     }
   }
 }
-}
-// <-- Close the main CSS block
