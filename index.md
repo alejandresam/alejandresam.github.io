@@ -21,7 +21,7 @@ author_profile: true
       </div>
     </div>
     <div class="project-card">
-      <img src="/assets/images/semg-keystroke.jpg" alt="SEMG Keystroke Decoder" />
+      <img src="/assets/images/semg-keystroke.png" alt="SEMG Keystroke Decoder" />
       <div class="project-content">
         <h3>SEMG Keystroke Decoder</h3>
         <p>Deep learning model for SEMG-based keystroke decoding.</p>
@@ -29,7 +29,7 @@ author_profile: true
       </div>
     </div>
     <div class="project-card">
-      <img src="/assets/images/changebot.jpg" alt="ChangeBot" />
+      <img src="/assets/images/changebot.png" alt="ChangeBot" />
       <div class="project-content">
         <h3>ChangeBot</h3>
         <p>RAG-based chatbot automating email responses and reducing bounce rates by 33%.</p>
