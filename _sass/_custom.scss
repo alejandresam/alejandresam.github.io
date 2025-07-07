@@ -76,13 +76,28 @@ h3 {
 
 /* Author Profile Sidebar */
 
-/* Add these styles for the new sidebar elements */
+.sidebar.sticky {
+  max-height: none;
+}
+
 .author__quote {
   font-size: 0.9em;
   color: darken($warm-dark-grey, 10%);
-  margin-top: 1em;
-  padding-top: 1em;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
   border-top: 1px solid $light-border;
+
+  em {
+    font-style: italic;
+  }
+}
+
+.author__quote-author {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
 
 .author__fractal {

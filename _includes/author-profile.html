@@ -14,12 +14,6 @@
       {% endif %}
     </div>
 
-    {% if site.author.quote %}
-      <p class="author__quote">
-        <em>"{{ site.author.quote }}"</em>
-      </p>
-    {% endif %}
-
     <div class="author__urls-wrapper">
       <button class="btn btn--inverse">Follow</button>
       <ul class="author__urls social-icons">
@@ -33,6 +27,15 @@
         {% endfor %}
       </ul>
     </div>
+
+    {% if site.author.quote %}
+      <div class="author__quote">
+        <em>"{{ site.author.quote }}"</em>
+        {% if site.author.quote_author %}
+          <span class="author__quote-author">— {{ site.author.quote_author }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <div class="author__fractal">
       <img src="/assets/images/fractal.gif" alt="Mathematical Fractal GIF">
