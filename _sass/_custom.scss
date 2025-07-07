@@ -76,8 +76,14 @@ h3 {
 
 /* Author Profile Sidebar */
 
-.sidebar.sticky {
-  max-height: none !important; // Disable sticky behavior
+/
+.sticky-wrapper {
+  
+  height: auto !important;
+
+  .sidebar.sticky {
+    max-height: none !important;
+  }
 }
 
 .author__quote {
