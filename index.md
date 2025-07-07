@@ -10,35 +10,34 @@ author_profile: true
 
 <div id="projects" class="section">
   <h2>Featured Projects</h2>
-
+  <h3>Chess RL Transformer</h3>
   <div class="project-item-alternating">
     <div class="project-image">
       <img src="/assets/images/chess-rl.png" alt="Chess RL Transformer" />
     </div>
     <div class="project-details">
-      <h3>Chess RL Transformer</h3>
       <p>Built an autoregressive transformer for chess move prediction (FEN sequences), achieving 98%+ legal move accuracy and developing an open-source UI for interactive play. Currently co-leading GRPO (Reinforcement Learning) refinement with Stockfish.</p>
       <a href="YOUR_GITHUB_LINK_HERE" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </div>
 
   <div class="project-item-alternating">
+    <h3>SEMG Keystroke Decoder</h3>
     <div class="project-image">
       <img src="/assets/images/semg-keystroke.png" alt="SEMG Keystroke Decoder" />
     </div>
     <div class="project-details">
-      <h3>SEMG Keystroke Decoder</h3>
       <p>Engineered and evaluated deep learning models (Conv-GRU, LSTM, Transformer) for SEMG-to-QWERTY keystroke decoding, identifying Conv-GRU as the optimal architecture by achieving a 2x Character Error Rate (CER) improvement over the baseline model.</p>
       <a href="YOUR_GITHUB_LINK_HERE" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </div>
 
   <div class="project-item-alternating">
+    <h3>ChangeBot</h3>
     <div class="project-image">
       <img src="/assets/images/changebot.png" alt="ChangeBot" />
     </div>
     <div class="project-details">
-      <h3>ChangeBot</h3>
       <p>Led a 6-member team in developing "ChangeBot," a RAG-based chatbot (LangChain, Hugging Face) to generate personalized emails for local representatives, resulting in a 33% reduction in misdirected emails and improving constituent communication.</p>
       <a href="YOUR_GITHUB_LINK_HERE" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>

@@ -1,0 +1,41 @@
+<div class="sidebar sticky">
+  {% if site.author %}
+    <div class="author__avatar">
+      {% if site.author.avatar contains "://" %}
+        <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}">
+      {% else %}
+        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+      {% endif %}
+    </div>
+    <div class="author__content">
+      <h3 class="author__name">{{ site.author.name }}</h3>
+      {% if site.author.bio %}
+        <p class="author__bio">{{ site.author.bio }}</p>
+      {% endif %}
+    </div>
+
+    {% if site.author.quote %}
+      <p class="author__quote">
+        <em>"{{ site.author.quote }}"</em>
+      </p>
+    {% endif %}
+
+    <div class="author__urls-wrapper">
+      <button class="btn btn--inverse">Follow</button>
+      <ul class="author__urls social-icons">
+        {% if site.author.location %}
+          <li><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> {{ site.author.location }}</li>
+        {% endif %}
+        {% for link in site.author.links %}
+          {% if link.label and link.url %}
+            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-fw fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="author__fractal">
+      <img src="/assets/images/fractal.gif" alt="Mathematical Fractal GIF">
+    </div>
+  {% endif %}
+</div>

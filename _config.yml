@@ -35,22 +35,7 @@ author:
     - label: "CV" # Added CV link here for sidebar as well
       icon: "ai ai-cv-square" # Using an academicons icon for CV
       url: "/assets/cv/CV_Samantha_Alejandre_Resume.pdf" # Link to your PDF
-
-# Navigation (for top menu)
-navigation:
-  main: # This 'main' key corresponds to the 'main:' in _data/navigation.yml
-    - title: "About"
-      url: /about/
-    - title: "Projects"
-      url: /projects/
-    - title: "Publications"
-      url: /publications/
-    - title: "Blog"
-      url: /blog/
-    - title: "Hobbies"
-      url: /hobbies/
-    - title: "CV"
-      url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf # Link to your PDF
+  quote: "The first principle is that you must not fool yourself — and you are the easiest person to fool."
 
 
 # Build settings

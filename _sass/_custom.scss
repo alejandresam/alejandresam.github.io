@@ -75,6 +75,26 @@ h3 {
 }
 
 /* Author Profile Sidebar */
+
+/* Add these styles for the new sidebar elements */
+.author__quote {
+  font-size: 0.9em;
+  color: darken($warm-dark-grey, 10%);
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid $light-border;
+}
+
+.author__fractal {
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid $light-border;
+
+  img {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
 .sidebar {
   background-color: darken($creamy-beige, 2%);
   padding: 1.8em;
