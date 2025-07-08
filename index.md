@@ -10,19 +10,19 @@ author_profile: true
 
 <div id="projects" class="section">
   <h2>Featured Projects</h2>
-  <h3>Chess Reienforcment Learning (RL) Transformer</h3>
+  <h3>Chess Reinforcement learning (RL) Transformer</h3>
   <div class="project-item-alternating">
     <div class="project-image">
       <img src="/assets/images/chess-rl.png" alt="Chess RL Transformer" />
     </div>
     <div class="project-details">
-      <p>Built an autoregressive transformer for chess move prediction (FEN sequences), achieving 98%+ legal move accuracy and developed an open-source UI for interactive play. Used two appraoches to RL, traditional appraoch Q-Learning and GRPO using stockfish as our reward system.</p>
+      <p>Built an autoregressive transformer for chess move prediction, achieving 98%+ legal move accuracy and developed an open-source UI for interactive play. Used two appraoches to RL, traditional appraoch Q-Learning and GRPO using stockfish as our reward system.</p>
       <a href="https://github.com/EmilGou/RL-Chess" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </div>
 
   <div class="project-item-alternating">
-    <h3>SEMG Keystroke Decoder</h3>
+    <h3>Surface Electromyography (SEMG) Keystroke Decoder</h3>
     <div class="project-image">
       <img src="/assets/images/semg-keystroke.png" alt="SEMG Keystroke Decoder" />
     </div>
@@ -33,13 +33,13 @@ author_profile: true
   </div>
 
   <div class="project-item-alternating">
-    <h3>ChangeBot</h3>
+    <h3>ChangeBot Retrieval-Augmented Generation (RAG)</h3>
     <div class="project-image">
       <img src="/assets/images/changebot.png" alt="ChangeBot" />
     </div>
     <div class="project-details">
-      <p>Led a 6-member team in developing ChangeBot, a RAG-based chatbot (LangChain, Hugging Face) to generate personalized emails for local representatives, resulting in a 33% reduction in misdirected emails and improving constituent communication.</p>
-      <a href="YOUR_GITHUB_LINK_HERE" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+      <p>Led a 6-member team in developing ChangeBot, a RAG-based chatbot (LangChain, Hugging Face) to generate personalized emails for local representatives, resulting in a one-third reduction in misdirected emails and improving constituent communication.</p>
+      <a href="https://www.canva.com/design/DAF1bLTsLLQ/cjCLoRAA2Tckw4SrSnQhrQ/view?utm_content=DAF1bLTsLLQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=had1a13e0a4" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </div>
 </div>
