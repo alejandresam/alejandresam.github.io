@@ -1,18 +1,21 @@
 // Custom variables for Alejandra Sam's website
 // This file overrides or extends Minimal Mistakes' default variables.
 // -- Colors --
-$creamy-beige: #F8F4E3; // A light, warm, creamy beige for backgrounds
-$warm-dark-grey: #4A4A4A; // A soft, dark grey for body text
-$accent-color: #B29D7C; // A muted, warm accent color (e.g., for links, buttons)
-$accent-color-hover: darken($accent-color, 15%); // Darken on hover
-$light-border: #E0DED7; // A soft, light border color
+// -- Colors --
+$creamy-beige: #FEFBF6;       // A very light, clean off-white
+$warm-dark-grey: #4A4A4A;     // Keeping your existing dark grey for text readability
+$accent-color: #D4A373;       // The new warm, earthy accent color you chose
+$accent-color-hover: darken($accent-color, 10%); // A slightly darker version for hover effects
+$light-border: #EAEAEA;       // A neutral, light grey for borders
 
+// -- The rest of the variables will use the colors defined above --
 $body-color: $warm-dark-grey;
 $text-color: $warm-dark-grey;
 $link-color: $accent-color;
 $link-color-hover: $accent-color-hover;
 $masthead-link-color: $warm-dark-grey;
 $masthead-link-color-hover: $accent-color;
+
 
 /
 // -- Typography (Fonts) --
