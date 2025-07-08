@@ -51,6 +51,8 @@ h3 {
   z-index: 10;
   position: relative;
   box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  position: sticky;
+  top: 0;
 }
 
 .masthead__inner-wrap {
@@ -161,6 +163,7 @@ h3 {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 
+
   .project-image {
     flex: 1 1 40%;
     img {
@@ -176,6 +179,11 @@ h3 {
   // Alternating layout
   &:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
   }
 }
 
