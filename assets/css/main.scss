@@ -6,7 +6,7 @@
 
 // 2. Import your custom variables. This MUST come after the skin
 //    but BEFORE the main theme file.
-@import "custom/variables";
+@import "variables";
 
 // 3. Import the main Minimal Mistakes theme styles.
 //    It will now use the variables you defined above.
@@ -14,5 +14,5 @@
 
 // 4. Import your custom CSS rules. This MUST come last so it can
 //    override the theme's default styles.
-@import "custom/custom";
+@import "custom";
 
