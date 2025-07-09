@@ -29,12 +29,7 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/samanthaalejandre"
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar-square" # Academicons are supported!
-      url: "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" # IMPORTANT: Update YOUR_SCHOLAR_ID
-    - label: "CV" # Added CV link here for sidebar as well
-      icon: "ai ai-cv-square" # Using an academicons icon for CV
-      url: "/assets/cv/CV_Samantha_Alejandre_Resume.pdf" # Link to your PDF
+    
   quote: "The first principle is that you must not fool yourself — and you are the easiest person to fool."
   quote_author: "Richard Feynman"
 
