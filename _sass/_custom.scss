@@ -253,3 +253,8 @@ h3 {
     }
   }
 }
+
+/* Adds a consistent, subtle border to all project/experience images */
+.project-item-alternating .project-image img {
+  border: 1px solid $light-border;
+}
