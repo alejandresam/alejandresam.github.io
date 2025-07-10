@@ -5,34 +5,35 @@ author_profile: true
 
 <div id="about" class="section">
   <h2>About Me</h2>
-  <p>Hello, welcome to my website! I am a passionate Electrical Computing Engineer M.S. Student and Researcher with an interest in Machine Learning, Data Science, and Artificial Intelligence. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
+  <p>Hello, welcome to my website! I am a passionate <strong>Electrical Computing Engineer M.S. Student and Researcher</strong> with an interest in <strong>Machine Learning, Data Science, and Artificial Intelligence</strong>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
 </div>
 
 <div id="experience" class="section">
   <h2>Work Experience</h2>
 
   <div class="project-item-alternating">
+    <h3>Data and Policy Analyst</h3>
+    <p style="font-style: italic;">Latino Policy and Politics Institute (LPPI) | Feb 2024 - Present</p>
     <div class="project-image">
       <a href="https://latinoclimatehealth.org/" target="_blank" rel="noopener noreferrer">
         <img src="/assets/images/lppi-dashboard.png" alt="Latino Climate and Health Dashboard" />
       </a>
     </div>
     <div class="project-details">
-      <h3>Data and Policy Analyst</h3>
-      <p style="font-style: italic;">Latino Policy and Politics Institute (LPPI) | Feb 2024 - Present</p>
       <a href="https://latino.ucla.edu/person/samantha-alejandre/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View Bio Page</a>
     </div>
   </div>
 
   <div class="project-item-alternating">
+    <h3>Data Engineer Intern</h3>
+    <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
     <div class="project-image">
       <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
         <img src="/assets/images/airbyte-pr.png" alt="Airbyte Pull Request" />
       </a>
     </div>
     <div class="project-details">
-      <h3>Data Engineer Intern</h3>
-      <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
+      
       <a href="https://github.com/airbytehq/airbyte/pull/29304" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View Pull Request</a>
     </div>
   </div>
