@@ -1,11 +1,13 @@
 ---
 layout: single
 author_profile: true
+seo:
+  title: false 
 ---
 
 <div id="about" class="section">
   <h2>About Me</h2>
-  <p>Hello, welcome to my website! I am a passionate <strong>Electrical Computing Engineer M.S. Student and Researcher</strong> with an interest in <strong>Machine Learning, Data Science, and Artificial Intelligence</strong>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
+  <p>Hello, welcome to my website! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
 </div>
 
 <div id="experience" class="section">
@@ -29,7 +31,7 @@ author_profile: true
     <h3>Data Engineer Intern</h3>
     <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
     <div class="project-image">
-    
+
       <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
         <img src="/assets/images/airbyte-pr.png" alt="Airbyte Pull Request" />
       </a>
