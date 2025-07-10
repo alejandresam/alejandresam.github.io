@@ -20,6 +20,7 @@ author_profile: true
       </a>
     </div>
     <div class="project-details">
+
       <a href="https://latino.ucla.edu/person/samantha-alejandre/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View Bio Page</a>
     </div>
   </div>
@@ -28,6 +29,7 @@ author_profile: true
     <h3>Data Engineer Intern</h3>
     <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
     <div class="project-image">
+    
       <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
         <img src="/assets/images/airbyte-pr.png" alt="Airbyte Pull Request" />
       </a>
