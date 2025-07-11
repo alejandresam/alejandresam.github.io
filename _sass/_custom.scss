@@ -316,3 +316,37 @@ blockquote {
   font-size: 1.1em;
   color: darken($warm-dark-grey, 10%);
 }
+
+/* --- 3. Page Section Styles --- */
+/* (Add this at the end of the section) */
+
+/* How I Work Section */
+.section-subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #777;
+  text-align: center;
+  margin: -1em auto 2.5em auto;
+  max-width: 800px;
+}
+
+.work-case-study {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+  margin-bottom: 3em;
+  padding: 2em;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+}
+.work-header h3 { font-size: 1.4em; margin-bottom: 0.2em; }
+.work-header p { font-style: italic; color: #888; }
+.work-description h4 { margin-top: 0; }
+.work-description ul { list-style: none; padding-left: 0; }
+.work-description li { margin-bottom: 0.5em; display: flex; align-items: flex-start; }
+.work-description .fa-check-circle { color: $accent-color; margin-right: 0.75em; margin-top: 0.25em;}
+
+@media (max-width: 768px) {
+  .work-case-study { grid-template-columns: 1fr; }
+}
