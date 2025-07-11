@@ -13,7 +13,7 @@ seo:
 <div id="skills" class="section">
   <h2>Skills & Methods</h2>
   <blockquote>
-    <p>I thrive on execution and clarity, filtering out distractions to ensure 110% of our effort is focused on achieving the mission.</p>
+    <p>What I bring to the table is a commitment to execution. I thrive on filtering out the noise and dedicating every effort to achieving our collective goals.</p>
   </blockquote>
 
   <div class="skills-list-container">
