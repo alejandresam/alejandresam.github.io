@@ -10,6 +10,32 @@ seo:
   <p>Hello, welcome to my website! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
 </div>
 
+<div id="skills" class="section">
+  <h2>Skills & Methods</h2>
+  <blockquote>
+    <p>I thrive on execution and clarity, filtering out distractions to ensure 110% of our effort is focused on achieving the mission.</p>
+  </blockquote>
+
+  <div class="skills-list-container">
+    <div class="skills-column">
+      <h3>Languages & Libraries</h3>
+      <ul>
+        <li><i class="fab fa-python"></i> Python (Pandas, PyTorch) <span class="skill-years">4+ years</span></li>
+        <li><i class="fas fa-database"></i> SQL <span class="skill-years">3+ years</span></li>
+        <li><i class="fab fa-r-project"></i> R (tidyverse) <span class="skill-years">3+ years</span></li>
+      </ul>
+    </div>
+    <div class="skills-column">
+      <h3>Tools & Technologies</h3>
+      <ul>
+        <li><i class="fab fa-aws"></i> AWS (S3, SageMaker) <span class="skill-years">2+ years</span></li>
+        <li><i class="fab fa-docker"></i> Docker <span class="skill-years">2+ years</span></li>
+        <li><i class="fab fa-git-alt"></i> Git & GitHub <span class="skill-years">4+ years</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <div id="experience" class="section">
   <h2>Work Experience</h2>
 
@@ -80,36 +106,3 @@ seo:
   </div>
 </div>
 
-<div id="skills" class="section">
-  <h2>My Toolkit</h2>
-  <blockquote>
-    <p>My superpower is translating complex problems into actionable steps, executing with focus, and cutting through the noise to deliver results.</p>
-  </blockquote>
-
-  <div class="skills-grid">
-    <div class="skill-category">
-      <h3>Languages & Libraries</h3>
-      <ul>
-        <li><i class="fab fa-python" aria-hidden="true"></i> Python (Pandas, NumPy, Scikit-learn, PyTorch)</li>
-        <li><i class="fas fa-database" aria-hidden="true"></i> SQL</li>
-        <li><i class="fab fa-r-project" aria-hidden="true"></i> R (tidyverse)</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h3>Cloud & Tools</h3>
-      <ul>
-        <li><i class="fab fa-aws" aria-hidden="true"></i> AWS (S3, Athena, SageMaker)</li>
-        <li><i class="fab fa-docker" aria-hidden="true"></i> Docker</li>
-        <li><i class="fab fa-git-alt" aria-hidden="true"></i> Git/GitHub</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <h3>Methodologies</h3>
-      <ul>
-        <li><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning (Regression, Classification, NLP)</li>
-        <li><i class="fas fa-cogs" aria-hidden="true"></i> ETL Pipelines & RAG</li>
-        <li><i class="fas fa-chart-bar" aria-hidden="true"></i> Geospatial Analysis</li>
-      </ul>
-    </div>
-  </div>
-</div>
