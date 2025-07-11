@@ -79,3 +79,37 @@ seo:
     </div>
   </div>
 </div>
+
+<div id="skills" class="section">
+  <h2>My Toolkit</h2>
+  <blockquote>
+    <p>My superpower is translating complex problems into actionable steps, executing with focus, and cutting through the noise to deliver results.</p>
+  </blockquote>
+
+  <div class="skills-grid">
+    <div class="skill-category">
+      <h3>Languages & Libraries</h3>
+      <ul>
+        <li><i class="fab fa-python" aria-hidden="true"></i> Python (Pandas, NumPy, Scikit-learn, PyTorch)</li>
+        <li><i class="fas fa-database" aria-hidden="true"></i> SQL</li>
+        <li><i class="fab fa-r-project" aria-hidden="true"></i> R (tidyverse)</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Cloud & Tools</h3>
+      <ul>
+        <li><i class="fab fa-aws" aria-hidden="true"></i> AWS (S3, Athena, SageMaker)</li>
+        <li><i class="fab fa-docker" aria-hidden="true"></i> Docker</li>
+        <li><i class="fab fa-git-alt" aria-hidden="true"></i> Git/GitHub</li>
+      </ul>
+    </div>
+    <div class="skill-category">
+      <h3>Methodologies</h3>
+      <ul>
+        <li><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning (Regression, Classification, NLP)</li>
+        <li><i class="fas fa-cogs" aria-hidden="true"></i> ETL Pipelines & RAG</li>
+        <li><i class="fas fa-chart-bar" aria-hidden="true"></i> Geospatial Analysis</li>
+      </ul>
+    </div>
+  </div>
+</div>
