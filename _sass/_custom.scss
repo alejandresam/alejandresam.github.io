@@ -52,7 +52,6 @@ h3 {
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 
-  /* --- Add these two lines --- */
   position: sticky;
   top: 0;
 }
@@ -259,4 +258,52 @@ h3 {
 /* Adds a consistent, subtle border to all project/experience images */
 .project-item-alternating .project-image img {
   border: 1px solid $light-border;
+}
+
+/* --- 3. Page Section Styles --- */
+/* (Add this at the end of the section) */
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.skill-category h3 {
+  font-size: 1.2em;
+  border-bottom: 2px solid $light-border;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category li {
+  margin-bottom: 0.8em;
+  font-size: 1.05em;
+  display: flex;
+  align-items: center;
+}
+
+.skill-category li .fab,
+.skill-category li .fas {
+  color: $accent-color;
+  margin-right: 0.75em;
+  width: 1.2em;
+  text-align: center;
+}
+
+blockquote {
+  border-left: 4px solid $accent-color;
+  padding-left: 1.5em;
+  margin-left: 0;
+  font-style: italic;
+  font-size: 1.1em;
+  color: darken($warm-dark-grey, 10%);
 }
