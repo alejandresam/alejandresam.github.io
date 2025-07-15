@@ -5,12 +5,12 @@ seo:
   title: false 
 ---
 
-<div id="about" class="section", data-aos="fade-up">
+<div id="about" class="section" data-aos="fade-up">
   <h2>About Me</h2>
   <p>Hello, and welcome. I am happy you're here! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
 
-<div id="skills" class="section", data-aos="fade-up">
+<div id="skills" class="section" data-aos="fade-up">
   <h2>Skills & Methods</h2>
   <blockquote>
     <p>My commitment is to execute with 110% effort to achieve our shared, long-term mission.</p>
@@ -36,7 +36,7 @@ seo:
   </div>
 </div>
 
-<div id="experience" class="section", data-aos="fade-up">
+<div id="experience" class="section" data-aos="fade-up">
   <h2>Work Experience</h2>
 
   <div class="project-item-alternating">
@@ -68,7 +68,7 @@ seo:
   </div>
 </div>
 
-<div id="projects" class="section", data-aos="fade-up">
+<div id="projects" class="section" data-aos="fade-up">
   <h2>Featured Projects</h2>
 
   <div class="project-item-alternating">
@@ -111,4 +111,3 @@ seo:
     once: true,    // whether animation should happen only once - while scrolling down
   });
 </script>
-
