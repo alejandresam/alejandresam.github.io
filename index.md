@@ -53,11 +53,7 @@ seo:
   </div>
 
   <div class="project-item-alternating">
-    <div class="project-image">
-      <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/airbyte-pr.png" alt="Airbyte Pull Request" />
-      </a>
-    </div>
+    
     <div class="project-details">
       <h3>Data Engineer Intern</h3>
       <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
