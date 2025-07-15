@@ -7,13 +7,13 @@ seo:
 
 <div id="about" class="section">
   <h2>About Me</h2>
-  <p>Hello, welcome to my website! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA, working on my research, which aims to develop research-informed projects that empower underrepresented communities.</p>
+  <p>Hey hey hey, welcome to my website! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
 
 <div id="skills" class="section">
   <h2>Skills & Methods</h2>
   <blockquote>
-    <p>What I bring to the table is a commitment to execution. I thrive on filtering out the noise and dedicating every effort to achieving our collective goals.</p>
+    <p>In one line, what I bring to the table is my commitment to execute and putting in 110% of my effort in our long term mission.</p>
   </blockquote>
 
   <div class="skills-list-container">
@@ -42,6 +42,7 @@ seo:
   <div class="project-item-alternating">
     <h3>Data and Policy Analyst</h3>
     <p style="font-style: italic;">Latino Policy and Politics Institute (LPPI) | Feb 2024 - Present</p>
+    <p>At LPPI, my role is about more than just data. I led the data research for the Latino Climate and Health Dashboard, a project that required to be automated and reproduceable for understanding climate change and health disparities in different racial neighborhoods in California. Click the image to go to our website! </p>
     <div class="project-image">
       <a href="https://latinoclimatehealth.org/" target="_blank" rel="noopener noreferrer">
         <img src="/assets/images/lppi-dashboard.png" alt="Latino Climate and Health Dashboard" />
@@ -56,6 +57,8 @@ seo:
   <div class="project-item-alternating">
     <h3>Data Engineer Intern</h3>
     <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
+    <p>During my internship at Wisetack, I collaborated closely with the analytics and engineering teams. My goal was to deliver tools that would directly improve their workflow. This included contributing a new Fiserv API connector to the open-source Airbyte project.</p>
+
     <div class="project-image">
 
       <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
