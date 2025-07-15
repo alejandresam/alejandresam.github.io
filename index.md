@@ -10,12 +10,27 @@ seo:
   <p>Hello, and welcome. I am happy you're here! I am a passionate <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
 
+<div class="section" data-aos="fade-up">
+  <h2>My Working Philosophy</h2>
+  <div class="philosophy-grid">
+    <div class="philosophy-item">
+      <h4>Mission-Driven Execution</h4>
+      <p>I believe in understanding the "why" behind every project. This clarity allows me to cut through the noise and focus on delivering robust, effective solutions.</p>
+    </div>
+    <div class="philosophy-item">
+      <h4>Collaborative by Default</h4>
+      <p>The best results come from teamwork. I thrive on open communication, sharing knowledge, and working with others to turn individual efforts into collective success.</p>
+    </div>
+    <div class="philosophy-item">
+      <h4>Reliability is a Feature</h4>
+      <p>For me, delivering on time and with high quality is not just a goal; it's a core feature of my work. I take ownership and see projects through to completion.</p>
+    </div>
+  </div>
+</div>
+
 <div id="skills" class="section" data-aos="fade-up">
   <h2>Skills & Methods</h2>
-  <blockquote>
-    <p>My commitment is to execute with 110% effort to achieve our shared, long-term mission.</p>
-  </blockquote>
-
+ 
   <div class="skills-list-container">
     <div class="skills-column">
       <h3>Languages & Libraries</h3>
@@ -109,5 +124,17 @@ seo:
   AOS.init({
     duration: 800, // animation duration in milliseconds
     once: true,    // whether animation should happen only once - while scrolling down
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var typed = new Typed('#typed-title', {
+      strings: ["./run_samy", "Samantha Alejandre"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      smartBackspace: true
+    });
   });
 </script>
