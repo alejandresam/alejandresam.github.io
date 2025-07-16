@@ -1,9 +1,11 @@
 main:
   - title: "About"
     url: /#about
+  - title: "Skills"
+    url: /#skills
   - title: "Experience"
     url: /#experience
   - title: "Projects"
     url: /#projects
-  - title: "CV"
+  - title: "Resume"
     url: /assets/cv/CV_Samantha_Alejandre_Resume.pdf
