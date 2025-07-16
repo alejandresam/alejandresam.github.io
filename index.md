@@ -10,7 +10,7 @@ seo:
   <p>Hello, and welcome. I am happy you're here! I am an upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
 
-<div id="skills" class="section" data-aos="fade-up">
+<div id="skills" class="section" >
   <h2>My Approach & Toolkit</h2>
   <blockquote>
     <p>My commitment is to execute with 110% effort to achieve our shared, long-term mission.</p>
