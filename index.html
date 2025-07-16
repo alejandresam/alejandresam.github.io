@@ -153,6 +153,17 @@
   /* --- Other Style Fixes --- */
   .sidebar.sticky { max-height: none !important; overflow-y: visible !important; }
   .highlight { color: #B58652; font-weight: 600; }
+
+  .author__urls.social-icons a {
+    transition: color 0.2s ease-in-out;
+  }
+  #cta-button {
+    transform: scale(1.1); /* Make it 10% larger */
+    margin-top: 1em;
+  }
+  #cta-button:hover {
+    transform: scale(1.15) translateY(-2px); /* Slightly larger on hover */
+  }
 </style>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -312,7 +323,7 @@
     
     
     
-    <meta itemprop="dateModified" content="2025-07-15T20:51:02-07:00">
+    <meta itemprop="dateModified" content="2025-07-15T21:14:23-07:00">
 
     <div class="page__inner-wrap">
       
@@ -449,7 +460,7 @@
 <div class="section text-center" data-aos="fade-up">
   <h2>Let's Connect</h2>
   <p>I'm always excited to discuss new projects and opportunities.<br />Feel free to reach out—I'd love to hear from you.</p>
-  <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary">Say Hello</a>
+  <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary" id="cta-button">Say Hello</a>
 </div>
 
 <script>
