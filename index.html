@@ -83,7 +83,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
 <style>
   .sidebar.sticky {
     max-height: none !important;
@@ -93,60 +92,8 @@
     color: #B58652; /* A slightly darker, more readable version of your accent color */
     font-weight: 600; /* A semi-bold weight, less heavy than default bold */
   }
-  /* --- Skills Section V-Final: Self-Contained Animation --- */
-  .skill-bar {
-    width: 100%;
-    background-color: #e9ecef;
-    border-radius: 4px;
-    height: 12px;
-  }
-
-  .skill-progress {
-    background-color: #D4A373; /* Using your accent color directly */
-    height: 100%;
-    width: 0; /* Start at 0 width */
-    border-radius: 4px;
-    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-
-  /* --- Other Style Fixes --- */
-  .sidebar.sticky {
-    max-height: none !important;
-    overflow-y: visible !important;
-  }
-  .highlight {
-    color: #B58652;
-    font-weight: 600;
-  }
 </style>
 
-<script>
-  // This function will run after the entire page is loaded and ready
-  document.addEventListener("DOMContentLoaded", function() {
-    
-    // --- Definitive Skill Bar Animation Logic ---
-    const skillsSection = document.querySelector('#skills');
-    
-    // An observer to watch when the skills section becomes visible
-    const observer = new IntersectionObserver(entries => {
-      // The 'isIntersecting' property is true when the element is in view
-      if (entries[0].isIntersecting) {
-        const progressBars = document.querySelectorAll('.skill-progress');
-        progressBars.forEach(bar => {
-          // Set the width from the data-progress attribute
-          bar.style.width = bar.getAttribute('data-progress');
-        });
-        // Important: Stop observing after the animation has run once
-        observer.unobserve(skillsSection);
-      }
-    }, {
-      threshold: 0.3 // Trigger when 30% of the section is visible
-    });
-
-    // Start observing the skills section
-    observer.observe(skillsSection);
-  });
-</script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -305,7 +252,7 @@
     
     
     
-    <meta itemprop="dateModified" content="2025-07-15T19:54:20-07:00">
+    <meta itemprop="dateModified" content="2025-07-15T19:57:23-07:00">
 
     <div class="page__inner-wrap">
       
@@ -462,6 +409,47 @@
   <p>I'm always excited to discuss new projects and opportunities.<br />Feel free to reach out—I'd love to hear from you.</p>
   <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary">Say Hello</a>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    
+    // Initialize Typed.js for the site title
+    var typed = new Typed('#typed-title', {
+      strings: ["./run_samy", "Samantha Alejandre"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      smartBackspace: true
+    });
+
+    // Initialize Animate on Scroll (AOS)
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+
+    // --- Definitive Skill Bar Animation Logic ---
+    // This script listens for the AOS animation to complete on the skills section
+    // before it triggers the bar animation.
+    const skillsSection = document.querySelector('#skills');
+    
+    // Create an Observer to watch when the element becomes visible
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progressBars = document.querySelectorAll('.skill-progress');
+          progressBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = progress;
+          });
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+
+    observer.observe(skillsSection);
+  });
+</script>
 
 
         
