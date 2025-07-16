@@ -84,16 +84,67 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 <style>
-  .sidebar.sticky {
-    max-height: none !important;
-    overflow-y: visible !important;
+  /* --- Skills Section V-Final: Interactive Grid --- */
+  .interactive-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5em;
   }
-  .highlight {
-    color: #B58652; /* A slightly darker, more readable version of your accent color */
-    font-weight: 600; /* A semi-bold weight, less heavy than default bold */
-  }
-</style>
 
+  .skill-card {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 2em 1.5em;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  }
+
+  .skill-card i {
+    font-size: 3em;
+    color: #D4A373; /* Your accent color */
+    margin-bottom: 0.5em;
+  }
+
+  .skill-card h3 {
+    margin: 0;
+    font-size: 1.15em;
+  }
+  
+  .skill-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 110%; /* Position above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 1;
+    width: 200px;
+    font-size: 0.9em;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .skill-card:hover .skill-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* --- Other Style Fixes --- */
+  .sidebar.sticky { max-height: none !important; overflow-y: visible !important; }
+  .highlight { color: #B58652; font-weight: 600; }
+</style>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -252,7 +303,7 @@
     
     
     
-    <meta itemprop="dateModified" content="2025-07-15T20:29:58-07:00">
+    <meta itemprop="dateModified" content="2025-07-15T20:38:58-07:00">
 
     <div class="page__inner-wrap">
       
@@ -271,66 +322,42 @@
   <p>Hello, and welcome. I am happy you're here! I am an upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
 
-<div id="skills" class="section">
+<div id="skills" class="section" data-aos="fade-up">
   <h2>My Approach &amp; Toolkit</h2>
   <blockquote>
     <p>My commitment is to execute with 110% effort to achieve our shared, long-term mission.</p>
   </blockquote>
 
-  <div class="skills-container">
-    <div class="skill-item">
-      <div class="skill-info">
-        <i class="fab fa-python"></i>
-        <span>Python (Pandas, PyTorch)</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="90%"></div>
-      </div>
+  <div class="interactive-skills-grid">
+    <div class="skill-card">
+      <i class="fab fa-python"></i>
+      <h3>Python</h3>
+      <p class="skill-tooltip">Used for data analysis, deep learning models (PyTorch), and building automated data pipelines.</p>
     </div>
-    <div class="skill-item">
-      <div class="skill-info">
-        <i class="fas fa-database"></i>
-        <span>SQL</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="80%"></div>
-      </div>
+    <div class="skill-card">
+      <i class="fas fa-database"></i>
+      <h3>SQL</h3>
+      <p class="skill-tooltip">Experience in complex querying, data extraction, and transformation for analytics.</p>
     </div>
-    <div class="skill-item">
-      <div class="skill-info">
-        <i class="fab fa-aws"></i>
-        <span>AWS (S3, SageMaker)</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="70%"></div>
-      </div>
+    <div class="skill-card">
+      <i class="fab fa-aws"></i>
+      <h3>AWS</h3>
+      <p class="skill-tooltip">Proficient with S3 for storage, Athena for querying, and SageMaker for model deployment.</p>
     </div>
-    <div class="skill-item">
-      <div class="skill-info">
-        <i class="fab fa-docker"></i>
-        <span>Docker</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="75%"></div>
-      </div>
+    <div class="skill-card">
+      <i class="fab fa-docker"></i>
+      <h3>Docker</h3>
+      <p class="skill-tooltip">Used to containerize applications and build reproducible ETL pipelines with Airbyte.</p>
     </div>
-     <div class="skill-item">
-      <div class="skill-info">
-        <i class="fab fa-r-project"></i>
-        <span>R (tidyverse)</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="70%"></div>
-      </div>
+    <div class="skill-card">
+      <i class="fab fa-r-project"></i>
+      <h3>R</h3>
+      <p class="skill-tooltip">Utilized the tidyverse ecosystem for data cleaning, validation, and geospatial analysis.</p>
     </div>
-    <div class="skill-item">
-      <div class="skill-info">
-        <i class="fab fa-git-alt"></i>
-        <span>Git &amp; GitHub</span>
-      </div>
-      <div class="skill-bar">
-        <div class="skill-progress" data-progress="95%"></div>
-      </div>
+    <div class="skill-card">
+      <i class="fab fa-git-alt"></i>
+      <h3>Git &amp; GitHub</h3>
+      <p class="skill-tooltip">Daily use for version control, collaboration, and managing open-source contributions.</p>
     </div>
   </div>
 </div>
