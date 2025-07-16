@@ -265,6 +265,7 @@ h3 {
 
 /* Skills Section */
 /* --- Skills Section V2: Animated Bars --- */
+/* --- Skills Section V2: Animated Bars (Revised) --- */
 blockquote {
   border-left: 4px solid $accent-color;
   padding-left: 1.5em;
@@ -301,7 +302,7 @@ blockquote {
 
 .skill-bar {
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #e9ecef;
   border-radius: 4px;
   height: 12px;
   overflow: hidden;
@@ -310,16 +311,8 @@ blockquote {
 .skill-progress {
   background-color: $accent-color;
   height: 100%;
-  width: 0; /* Start at 0, animation will fill it */
+  width: 0; /* Start at 0 */
   border-radius: 4px;
-  transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1); /* Smooth transition */
+  /* This transition will smoothly animate any change to the width property */
+  transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
-
-/*
-  This uses a trick with your existing AOS library.
-  When the section fades in, we trigger the bar animation.
-*/
-.section[data-aos].aos-animate .skill-progress {
-  width: var(--progress-width, 0); /* Set width from data attribute */
-}
-

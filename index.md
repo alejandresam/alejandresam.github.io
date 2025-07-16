@@ -151,6 +151,7 @@ seo:
 
 <script>
   document.addEventListener('DOMContentLoaded', function(){
+    
     // Initialize Typed.js for the site title
     var typed = new Typed('#typed-title', {
       strings: ["./run_samy", "Samantha Alejandre"],
@@ -166,11 +167,18 @@ seo:
       once: true,
     });
 
-    // Set skill bar progress widths from data attributes
+    // --- Revised Skill Bar Logic ---
+    // This script now directly sets the width of the bars
     const progressBars = document.querySelectorAll('.skill-progress');
-    progressBars.forEach(bar => {
-      const progress = bar.getAttribute('data-progress');
-      bar.style.setProperty('--progress-width', progress);
-    });
+    
+    // We run this after a short delay to ensure the page is fully ready
+    // and the animation is smooth.
+    setTimeout(() => {
+      progressBars.forEach(bar => {
+        const progress = bar.getAttribute('data-progress');
+        bar.style.width = progress;
+      });
+    }, 200); // 200ms delay
+
   });
 </script>
