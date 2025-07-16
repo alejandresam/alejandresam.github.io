@@ -20,31 +20,37 @@ seo:
     <div class="skill-card">
       <i class="fab fa-python"></i>
       <h3>Python</h3>
+      <p class="skill-card-years">4+ years</p>
       <p class="skill-tooltip">Used for data analysis, deep learning models (PyTorch), and building automated data pipelines.</p>
     </div>
     <div class="skill-card">
       <i class="fas fa-database"></i>
       <h3>SQL</h3>
+      <p class="skill-card-years">3+ years</p>
       <p class="skill-tooltip">Experience in complex querying, data extraction, and transformation for analytics.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-aws"></i>
       <h3>AWS</h3>
+      <p class="skill-card-years">2+ years</p>
       <p class="skill-tooltip">Proficient with S3 for storage, Athena for querying, and SageMaker for model deployment.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-docker"></i>
       <h3>Docker</h3>
+      <p class="skill-card-years">2+ years</p>
       <p class="skill-tooltip">Used to containerize applications and build reproducible ETL pipelines with Airbyte.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-r-project"></i>
       <h3>R</h3>
+      <p class="skill-card-years">2+ years</p>
       <p class="skill-tooltip">Utilized the tidyverse ecosystem for data cleaning, validation, and geospatial analysis.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-git-alt"></i>
       <h3>Git & GitHub</h3>
+      <p class="skill-card-years">4+ years</p>
       <p class="skill-tooltip">Daily use for version control, collaboration, and managing open-source contributions.</p>
     </div>
   </div>

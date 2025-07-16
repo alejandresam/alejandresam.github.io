@@ -1,9 +1,10 @@
 <style>
-  /* --- Skills Section V-Final: Interactive Grid --- */
+  /* --- Skills Section V-Final: Refined Interactive Grid --- */
   .interactive-skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    /* Adjusted for a slightly more compact grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1.25rem;
     margin-top: 2.5em;
   }
 
@@ -12,7 +13,7 @@
     background-color: #ffffff;
     border: 1px solid #f0f0f0;
     border-radius: 8px;
-    padding: 2em 1.5em;
+    padding: 1.5em; /* Reduced padding */
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
@@ -23,21 +24,28 @@
   }
 
   .skill-card i {
-    font-size: 3em;
-    color: #D4A373; /* Your accent color */
+    font-size: 2.5em; /* Reduced icon size */
+    color: #D4A373;
     margin-bottom: 0.5em;
   }
 
   .skill-card h3 {
+    margin: 0 0 0.25em 0; /* Added bottom margin */
+    font-size: 1.1em; /* Reduced heading size */
+  }
+  
+  /* New style for the years text */
+  .skill-card-years {
+    font-size: 0.9em;
+    color: #888;
     margin: 0;
-    font-size: 1.15em;
   }
   
   .skill-tooltip {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    bottom: 110%; /* Position above the card */
+    bottom: 105%; /* Adjusted position */
     left: 50%;
     transform: translateX(-50%);
     background-color: #333;
@@ -48,6 +56,7 @@
     z-index: 1;
     width: 200px;
     font-size: 0.9em;
+    pointer-events: none; /* Prevents tooltip from blocking hover */
     transition: opacity 0.2s ease-in-out;
   }
 
