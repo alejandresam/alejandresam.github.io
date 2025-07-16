@@ -265,3 +265,53 @@ h3 {
 
 /* Skills Section */
 /* --- Skills Section V2: Animated Bars --- */
+/* --- Skills Section V3: Synchronized Animation --- */
+blockquote {
+  border-left: 4px solid $accent-color;
+  padding-left: 1.5em;
+  margin: 1em 0 2.5em 0;
+  font-style: italic;
+  font-size: 1.15em;
+  color: darken($warm-dark-grey, 15%);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem 2.5rem;
+}
+
+.skill-item {
+  margin-bottom: 0.5em;
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75em;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.skill-info .fab,
+.skill-info .fas {
+  color: $accent-color;
+  font-size: 1.5em;
+  margin-right: 0.75em;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  height: 12px;
+}
+
+.skill-progress {
+  background-color: $accent-color;
+  height: 100%;
+  width: 0; /* Important: Start at 0 width */
+  border-radius: 4px;
+  /* This transition will smoothly animate any change to the width */
+  transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
