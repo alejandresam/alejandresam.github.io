@@ -265,7 +265,7 @@ h3 {
 
 /* Skills Section */
 /* --- Skills Section V2: Animated Bars --- */
-/* --- Skills Section V2: Animated Bars (Revised) --- */
+/* --- Skills Section V3: Synchronized Animation --- */
 blockquote {
   border-left: 4px solid $accent-color;
   padding-left: 1.5em;
@@ -305,14 +305,13 @@ blockquote {
   background-color: #e9ecef;
   border-radius: 4px;
   height: 12px;
-  overflow: hidden;
 }
 
 .skill-progress {
   background-color: $accent-color;
   height: 100%;
-  width: 0; /* Start at 0 */
+  width: 0; /* Important: Start at 0 width */
   border-radius: 4px;
-  /* This transition will smoothly animate any change to the width property */
-  transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+  /* This transition will smoothly animate any change to the width */
+  transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
 }

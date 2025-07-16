@@ -167,18 +167,25 @@ seo:
       once: true,
     });
 
-    // --- Revised Skill Bar Logic ---
-    // This script now directly sets the width of the bars
-    const progressBars = document.querySelectorAll('.skill-progress');
+    // --- Definitive Skill Bar Animation Logic ---
+    // This script listens for the AOS animation to complete on the skills section
+    // before it triggers the bar animation.
+    const skillsSection = document.querySelector('#skills');
     
-    // We run this after a short delay to ensure the page is fully ready
-    // and the animation is smooth.
-    setTimeout(() => {
-      progressBars.forEach(bar => {
-        const progress = bar.getAttribute('data-progress');
-        bar.style.width = progress;
+    // Create an Observer to watch when the element becomes visible
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const progressBars = document.querySelectorAll('.skill-progress');
+          progressBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = progress;
+          });
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
       });
-    }, 200); // 200ms delay
+    }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
 
+    observer.observe(skillsSection);
   });
 </script>
