@@ -44,8 +44,8 @@ seo:
     <div class="skill-card">
       <i class="fab fa-r-project"></i>
       <h3>R</h3>
-      <p class="skill-card-years">2+ years</p>
-      <p class="skill-tooltip">Utilized the tidyverse ecosystem for data cleaning, validation, and geospatial analysis.</p>
+      <p class="skill-card-years">4+ years</p>
+      <p class="skill-tooltip">Utilized the tidyverse package for data cleaning, validation, and geospatial analysis.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-git-alt"></i>
