@@ -128,7 +128,7 @@ seo:
 <div class="section text-center" data-aos="fade-up">
   <h2>Let's Connect</h2>
   <p>I'm always excited to discuss new projects and opportunities.<br/>Feel free to reach out—I'd love to hear from you.</p>
-  <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary">Say Hello</a>
+  <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary" id="cta-button">Say Hello</a>
 </div>
 
 <script>
