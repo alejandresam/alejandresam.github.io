@@ -13,24 +13,65 @@ seo:
 
 
 <div id="skills" class="section" data-aos="fade-up">
-  <h2>Skills & Methods</h2>
- 
-  <div class="skills-list-container">
-    <div class="skills-column">
-      <h3>Languages & Libraries</h3>
-      <ul>
-        <li><i class="fab fa-python"></i> Python (Pandas, PyTorch) <span class="skill-years">4+ years</span></li>
-        <li><i class="fas fa-database"></i> SQL <span class="skill-years">3+ years</span></li>
-        <li><i class="fab fa-r-project"></i> R (tidyverse) <span class="skill-years">3+ years</span></li>
-      </ul>
+  <h2>My Approach & Toolkit</h2>
+  <blockquote>
+    <p>My commitment is to execute with 110% effort to achieve our shared, long-term mission.</p>
+  </blockquote>
+
+  <div class="skills-container">
+    <div class="skill-item">
+      <div class="skill-info">
+        <i class="fab fa-python"></i>
+        <span>Python (Pandas, PyTorch)</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="90%"></div>
+      </div>
     </div>
-    <div class="skills-column">
-      <h3>Tools & Technologies</h3>
-      <ul>
-        <li><i class="fab fa-aws"></i> AWS (S3, SageMaker) <span class="skill-years">2+ years</span></li>
-        <li><i class="fab fa-docker"></i> Docker <span class="skill-years">2+ years</span></li>
-        <li><i class="fab fa-git-alt"></i> Git & GitHub <span class="skill-years">4+ years</span></li>
-      </ul>
+    <div class="skill-item">
+      <div class="skill-info">
+        <i class="fas fa-database"></i>
+        <span>SQL</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="80%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <i class="fab fa-aws"></i>
+        <span>AWS (S3, SageMaker)</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="70%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <i class="fab fa-docker"></i>
+        <span>Docker</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="75%"></div>
+      </div>
+    </div>
+     <div class="skill-item">
+      <div class="skill-info">
+        <i class="fab fa-r-project"></i>
+        <span>R (tidyverse)</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="70%"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <div class="skill-info">
+        <i class="fab fa-git-alt"></i>
+        <span>Git & GitHub</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" data-progress="95%"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -100,12 +141,11 @@ seo:
   </div>
 </div>
 
-<script>
-  AOS.init({
-    duration: 800, // animation duration in milliseconds
-    once: true,    // whether animation should happen only once - while scrolling down
-  });
-</script>
+<div class="section text-center" data-aos="fade-up">
+  <h2>Let's Connect</h2>
+  <p>I'm always excited to discuss new projects and opportunities.<br/>Feel free to reach out—I'd love to hear from you.</p>
+  <a href="mailto:alejandresam@g.ucla.edu" class="btn btn--primary">Say Hello</a>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function(){
@@ -115,6 +155,23 @@ seo:
       backSpeed: 30,
       loop: true,
       smartBackspace: true
+    });
+  });
+</script>
+
+<script>
+  // Initialize Animate on Scroll
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+
+  // Set progress bar widths from data attributes
+  document.addEventListener('DOMContentLoaded', () => {
+    const progressBars = document.querySelectorAll('.skill-progress');
+    progressBars.forEach(bar => {
+      const progress = bar.getAttribute('data-progress');
+      bar.style.setProperty('--progress-width', progress);
     });
   });
 </script>
