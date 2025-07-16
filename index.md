@@ -5,12 +5,10 @@ seo:
   title: false 
 ---
 
-<div id="about" class="section" >
+<div id="about" class="section" data-aos="fade-up">
   <h2>About Me</h2>
-  <p>Hello, and welcome. I am happy you're here! I am a upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
+  <p>Hello, and welcome. I am happy you're here! I am an upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
 </div>
-
-
 
 <div id="skills" class="section" data-aos="fade-up">
   <h2>My Approach & Toolkit</h2>
@@ -94,7 +92,11 @@ seo:
   </div>
 
   <div class="project-item-alternating">
-    
+    <div class="project-image">
+       <a href="https://github.com/airbytehq/airbyte/pull/29304" target="_blank" rel="noopener noreferrer">
+         <img src="/assets/images/airbyte-pr.png" alt="Airbyte Pull Request" />
+       </a>
+    </div>
     <div class="project-details">
       <h3>Data Engineer Intern</h3>
       <p style="font-style: italic;">Wisetack (Fintech) | Jun 2023 - Sep 2023</p>
@@ -149,6 +151,7 @@ seo:
 
 <script>
   document.addEventListener('DOMContentLoaded', function(){
+    // Initialize Typed.js for the site title
     var typed = new Typed('#typed-title', {
       strings: ["./run_samy", "Samantha Alejandre"],
       typeSpeed: 50,
@@ -156,18 +159,14 @@ seo:
       loop: true,
       smartBackspace: true
     });
-  });
-</script>
 
-<script>
-  // Initialize Animate on Scroll
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
+    // Initialize Animate on Scroll (AOS)
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
 
-  // Set progress bar widths from data attributes
-  document.addEventListener('DOMContentLoaded', () => {
+    // Set skill bar progress widths from data attributes
     const progressBars = document.querySelectorAll('.skill-progress');
     progressBars.forEach(bar => {
       const progress = bar.getAttribute('data-progress');
