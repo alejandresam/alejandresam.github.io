@@ -156,6 +156,13 @@
   #cta-button:hover {
     transform: scale(1.15) translateY(-2px); /* Slightly larger on hover */
   }
+  .skill-card i {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .skill-card:hover i {
+    transform: scale(1.2) rotate(5deg); /* Make the icon grow and slightly tilt */
+  }
 </style>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -166,6 +173,17 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  document.addEventListener('visibilitychange', function() {
+    var link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    link.href = document.hidden ? '/favicon-alt.ico' : '/favicon.ico';
+  });
+</script>
 <style>
   /* --- New Unified Color Palette Override --- */
   body, .masthead, .page__footer, .sidebar {
@@ -345,7 +363,7 @@
     <meta itemprop="headline" content="My Projects">
     
     
-    <meta itemprop="dateModified" content="2025-07-16T19:37:45-07:00">
+    <meta itemprop="dateModified" content="2025-07-16T20:52:09-07:00">
 
     <div class="page__inner-wrap">
       
