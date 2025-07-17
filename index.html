@@ -182,14 +182,24 @@
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script>
-  document.addEventListener('visibilitychange', function() {
-    var link = document.querySelector("link[rel~='icon']");
-    if (!link) {
-      link = document.createElement('link');
-      link.rel = 'icon';
-      document.getElementsByTagName('head')[0].appendChild(link);
+  // This tells the browser to wait until the entire HTML document is fully loaded and ready
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // First, we find the link tag that controls the main favicon
+    const faviconTag = document.querySelector("link[rel~='icon']");
+
+    // We only proceed if we successfully found the tag
+    if (faviconTag) {
+      const originalFavicon = faviconTag.href; // Save the original icon path (e.g., /favicon.ico)
+      const altFavicon = '/favicon-alt.ico';  // The path to your alternate icon
+
+      // Now, we set up the listener for when the tab visibility changes
+      document.addEventListener('visibilitychange', function() {
+        // If the tab is hidden, change the icon to the alternate version
+        // If it's visible again, change it back to the original
+        faviconTag.href = document.hidden ? altFavicon : originalFavicon;
+      });
     }
-    link.href = document.hidden ? '/favicon-alt.ico' : '/favicon.ico';
   });
 </script>
 <style>
@@ -341,7 +351,7 @@
     
     
     
-    <meta itemprop="dateModified" content="2025-07-16T20:57:10-07:00">
+    <meta itemprop="dateModified" content="2025-07-16T21:00:43-07:00">
 
     <div class="page__inner-wrap">
       
