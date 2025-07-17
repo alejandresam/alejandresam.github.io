@@ -11,6 +11,17 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  document.addEventListener('visibilitychange', function() {
+    var link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    link.href = document.hidden ? '/favicon-alt.ico' : '/favicon.ico';
+  });
+</script>
 {% include head/color-overrides.html %}
 
 {% include head/layout-overrides.html %}
