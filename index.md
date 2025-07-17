@@ -7,7 +7,7 @@ seo:
 
 <div id="about" class="section" >
   <h2>About Me</h2>
-  <p>Hello, and welcome. I am happy you're here! I am an upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories that data tells to help everyone in our society have opportunities to be their best.</p>
+  <p>Hello, and welcome. I am happy you're here! I am an upcoming <span class="highlight">Electrical Computing Engineer M.S. Student and Researcher</span> with an interest in <span class="highlight">Machine Learning, Data Science, and Artificial Intelligence</span>. I received my B.S. in Data Theory and Data Science Engineering minor from UCLA in 2025. Currently, I am a M.S. student at UCLA and Policy Fellow at Latino Policy and Politics Institute (LPPI) in the Research Department. I am working on my research which aims to uncover hidden patterns and stories within data. As AI becomes more integrated into our lives, I believe we have a huge responsibility to ensure it serves everyone by focusing on data transparency, building trust within our communities, and developing fair solutions to help everyone in our society have opportunities to be their best.</p>
 </div>
 
 <div id="skills" class="section" data-aos="fade-up">
@@ -21,7 +21,7 @@ seo:
       <i class="fab fa-python"></i>
       <h3>Python</h3>
       <p class="skill-card-years">4+ years</p>
-      <p class="skill-tooltip">Used for data analysis, deep learning models (PyTorch), and building automated data pipelines.</p>
+      <p class="skill-tooltip">Used for data analysis, deep learning models (PyTorch/TensorFlow), and building automated data pipelines.</p>
     </div>
     <div class="skill-card">
       <i class="fas fa-database"></i>
@@ -45,7 +45,7 @@ seo:
       <i class="fab fa-r-project"></i>
       <h3>R</h3>
       <p class="skill-card-years">4+ years</p>
-      <p class="skill-tooltip">Utilized the tidyverse package for data cleaning, validation, and geospatial analysis.</p>
+      <p class="skill-tooltip">Utilized for data cleaning, validation, and geospatial analysis.</p>
     </div>
     <div class="skill-card">
       <i class="fab fa-git-alt"></i>
