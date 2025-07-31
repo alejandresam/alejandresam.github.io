@@ -32,6 +32,34 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const trigger = document.getElementById('anniversary-trigger');
+
+    if (trigger) {
+      trigger.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the link from navigating
+
+        const secretCode = 'emil';
+        const userInput = prompt("Please enter the secret code:");
+
+        // Check if the user entered anything
+        if (userInput) {
+          // Convert to lower case and remove spaces, then check
+          if (userInput.toLowerCase().trim() === secretCode) {
+            // If correct, go to the anniversary page
+            window.location.href = '/anniversary/';
+          } else {
+            // If incorrect, show a message
+            alert("Sorry, that's not the secret code!");
+          }
+        }
+      });
+    }
+  });
+</script>
+
 {% include head/color-overrides.html %}
 
 {% include head/layout-overrides.html %}
