@@ -401,7 +401,7 @@
     <meta itemprop="headline" content="My Projects">
     
     
-    <meta itemprop="dateModified" content="2025-07-31T15:26:47-07:00">
+    <meta itemprop="dateModified" content="2025-07-31T15:36:56-07:00">
 
     <div class="page__inner-wrap">
       
@@ -510,25 +510,59 @@
     <div id="footer" class="page__footer">
       <footer>
         <div class="footer-secret-icon">
-  <a href="#" id="anniversary-trigger" title="A special surprise...">
-    <i class="fas fa-gift"></i>
+  <a href="#" id="anniversary-trigger" data-tooltip="A little surprise for you...">
+    <span class="fa-stack">
+      <i class="fas fa-gift fa-stack-1x"></i>
+      <strong class="fa-stack-1x icon-text">2</strong>
+    </span>
   </a>
 </div>
 
 <style>
-  /* Styles for the secret icon */
+  /* Styles for the secret icon and its tooltip */
   .footer-secret-icon {
     text-align: center;
     margin-top: 2em;
     font-size: 1.5em;
   }
   .footer-secret-icon a {
-    color: #ddd; /* A subtle, light grey color */
+    position: relative;
+    color: #ddd;
     transition: all 0.3s ease-in-out;
   }
   .footer-secret-icon a:hover {
-    color: #ff8a80; /* A warm, glowing red on hover */
+    color: #ff8a80;
     transform: scale(1.2);
+  }
+  .icon-text {
+    font-size: 0.5em;
+    margin-top: 0.1em;
+    color: #fff;
+  }
+  
+  /* The pop-up message (tooltip) */
+  [data-tooltip] {
+    position: relative;
+  }
+  [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.6em;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
   }
 </style>
         <div class="page__footer-follow">
