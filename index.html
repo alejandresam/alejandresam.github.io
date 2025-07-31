@@ -202,6 +202,34 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const trigger = document.getElementById('anniversary-trigger');
+
+    if (trigger) {
+      trigger.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the link from navigating
+
+        const secretCode = 'emil';
+        const userInput = prompt("Please enter the secret code:");
+
+        // Check if the user entered anything
+        if (userInput) {
+          // Convert to lower case and remove spaces, then check
+          if (userInput.toLowerCase().trim() === secretCode) {
+            // If correct, go to the anniversary page
+            window.location.href = '/anniversary/';
+          } else {
+            // If incorrect, show a message
+            alert("Sorry, that's not the secret code!");
+          }
+        }
+      });
+    }
+  });
+</script>
+
 <style>
   /* --- New Unified Color Palette Override --- */
   body, .masthead, .page__footer, .sidebar {
@@ -351,7 +379,7 @@
     
     
     
-    <meta itemprop="dateModified" content="2025-07-17T16:35:28-07:00">
+    <meta itemprop="dateModified" content="2025-07-31T15:26:47-07:00">
 
     <div class="page__inner-wrap">
       
@@ -543,7 +571,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-07-17">July 17, 2025</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-07-31">July 31, 2025</time></p>
 
       </footer>
 
@@ -566,9 +594,28 @@
 
     <div id="footer" class="page__footer">
       <footer>
-        <!-- start custom footer snippets -->
+        <div class="footer-secret-icon">
+  <a href="#" id="anniversary-trigger" title="A special surprise...">
+    <i class="fas fa-gift"></i>
+  </a>
+</div>
 
-<!-- end custom footer snippets -->
+<style>
+  /* Styles for the secret icon */
+  .footer-secret-icon {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+  .footer-secret-icon a {
+    color: #ddd; /* A subtle, light grey color */
+    transition: all 0.3s ease-in-out;
+  }
+  .footer-secret-icon a:hover {
+    color: #ff8a80; /* A warm, glowing red on hover */
+    transform: scale(1.2);
+  }
+</style>
         <div class="page__footer-follow">
   <ul class="social-icons">
     
