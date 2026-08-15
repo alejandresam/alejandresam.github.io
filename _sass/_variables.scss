@@ -1,14 +1,14 @@
 // Custom variables for Alejandra Sam's website
 // This file overrides or extends Minimal Mistakes' default variables.
-// -- Colors --
-// -- Colors --
-$creamy-beige: #FEFBF6;       // A very light, clean off-white
-$warm-dark-grey: #4A4A4A;     // Keeping your existing dark grey for text readability
-$accent-color: #D4A373;       // The new warm, earthy accent color you chose
-$accent-color-hover: darken($accent-color, 10%); // A slightly darker version for hover effects
-$light-border: #EAEAEA;       // A neutral, light grey for borders
 
-// -- The rest of the variables will use the colors defined above --
+// Colors
+$creamy-beige: #f6f8fb;
+$warm-dark-grey: #1f2933;
+$accent-color: #b76334;
+$accent-color-hover: darken($accent-color, 8%);
+$light-border: #d9e1ea;
+
+// Theme colors
 $body-color: $warm-dark-grey;
 $text-color: $warm-dark-grey;
 $link-color: $accent-color;
@@ -16,24 +16,16 @@ $link-color-hover: $accent-color-hover;
 $masthead-link-color: $warm-dark-grey;
 $masthead-link-color-hover: $accent-color;
 
-
-/
-// -- Typography (Fonts) --
-// To use a Google Font like "Open Sans", you'd typically add this to your `_includes/head/custom.html` file:
-// <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-// Find these lines and update them:
-
+// Typography
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol";
-
-// You might need to change $header-font-family or add it if it's not there.
 $header-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol";
 
-// Ensure these lines are using the new variables
 $base-font-family: $font-family-sans-serif;
 $body-font-family: $font-family-sans-serif;
-// -- Spacing --
-$gutter: 1.5em; // Standard spacing unit
+
+// Spacing
+$gutter: 1.5em;
