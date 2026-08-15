@@ -1,269 +1,288 @@
 /* =============================================================================
-   1. General & Foundational Styles
+   Base styling
    ========================================================================== */
 
 body {
   font-family: $body-font-family;
   color: $body-color;
-  line-height: 1.6;
+  line-height: 1.7;
   background-color: $creamy-beige;
 }
 
-/* Typography & Hierarchy */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font-family;
   color: $warm-dark-grey;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2rem;
   font-weight: 700;
-  border-bottom: 2px solid $accent-color;
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
+  margin: 2.25rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $light-border;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
-/* =============================================================================
-   2. Main Layout Components
-   ========================================================================== */
-
-/* Page Content Wrapper */
 .page__content {
-  background-color: #ffffff;
-  padding: 2.5em 3em;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  margin-top: 2em;
-  margin-bottom: 3em;
-  border: none;
+  background: #fff;
+  border: 1px solid $light-border;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+  margin-top: 1.75rem;
+  margin-bottom: 3rem;
+  padding: 2rem 2.25rem;
 }
 
-/* Navigation Bar (Masthead) */
-
-.masthead {
-  background-color: $creamy-beige;
-  border-bottom: 1px solid $light-border;
-  padding: 1em 0;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-
-  position: sticky;
-  top: 0;
+.page__content p {
+  margin-bottom: 1rem;
 }
 
-.masthead__inner-wrap {
-  max-width: 1200px;
-  padding: 0 1.5em;
-}
-
-.site-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: $warm-dark-grey;
-}
-
-.masthead__menu a {
-  font-weight: 500;
-  text-transform: uppercase;
-  color: $warm-dark-grey;
-  padding: 0.5em 1em;
-  &:hover {
-    color: $accent-color;
-  }
-}
-
-/* Author Profile Sidebar */
-
-/
-.sticky-wrapper {
-  
-  height: auto !important;
-
-  .sidebar.sticky {
-    max-height: none !important;
-  }
-}
-
-.author__quote {
-  font-size: 0.9em;
-  color: darken($warm-dark-grey, 10%);
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  border-top: 1px solid $light-border;
-
-  em {
-    font-style: italic;
-  }
-}
-
-.author__quote-author {
-  display: block;
-  text-align: right;
-  font-style: normal;
-  font-weight: bold;
-  margin-top: 0.5em;
-}
-
-.author__fractal {
-  margin-top: 1.5em;
-  padding-top: 1.5em;
-  border-top: 1px solid $light-border;
-
-  img {
-    width: 100%;
-    border-radius: 6px;
-  }
-}
 .sidebar {
-  background-color: darken($creamy-beige, 2%);
-  padding: 1.8em;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-  border: none;
+  background: #fff;
+  border: 1px solid $light-border;
+  border-radius: 18px;
+  box-shadow: none;
 }
 
-.author__avatar {
-  margin-bottom: 1em;
-  border: 3px solid rgba(255,255,255,0.8);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.author__avatar img {
+  border-radius: 18px;
+}
+
+.author__bio {
+  color: darken($body-color, 6%);
 }
 
 .author__urls-wrapper {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
-/* Footer */
-.page__footer {
-  background-color: $creamy-beige;
-  color: $warm-dark-grey;
-  border-top: 1px solid $light-border;
-  padding: 2em 0;
+.author__urls li {
+  margin-bottom: 0.35rem;
 }
 
-.page__footer .wrapper p {
-  color: $warm-dark-grey;
+.author__quote,
+.author__fractal,
+.author__urls-wrapper button {
+  display: none;
 }
 
 /* =============================================================================
-   3. Page Section Styles
+   Portfolio sections
    ========================================================================== */
 
-/* Projects Section */
-.project-item-alternating {
+.hero-block {
+  padding: 0.25rem 0 1rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: $accent-color;
+}
+
+.hero-block h1 {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+.hero-summary {
+  max-width: 42rem;
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  color: darken($body-color, 5%);
+}
+
+.hero-actions {
   display: flex;
-  align-items: center;
-  gap: 2em;
-  margin-bottom: 3em;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.section {
+  margin-top: 2.5rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.section-link {
+  color: $accent-color;
+  font-weight: 700;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
   background: #fff;
-  padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-
-
-  .project-image {
-    flex: 1 1 40%;
-    img {
-      width: 100%;
-      border-radius: 6px;
-    }
-  }
-
-  .project-details {
-    flex: 1 1 60%;
-  }
-
-  // Alternating layout
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.08);
-  }
+  border: 1px solid $light-border;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Work Experience Section */
-.experience-item {
-  margin-bottom: 2em;
-
-  .experience-header {
-    h3 {
-      margin-bottom: 0.1em;
-    }
-    p {
-      font-style: italic;
-      color: darken($warm-dark-grey, 10%);
-      margin-bottom: 1em;
-    }
-  }
-
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    li {
-      margin-bottom: 0.5em;
-    }
-  }
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba($accent-color, 0.45);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
 }
 
-/* =============================================================================
-   4. UI Elements
-   ========================================================================== */
+.project-card__image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.15rem;
+}
+
+.project-card__body h3 {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.project-card__body p {
+  margin: 0;
+  color: darken($body-color, 5%);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tags span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: #f3f5f7;
+  border: 1px solid $light-border;
+  color: darken($body-color, 8%);
+}
+
+.project-card .btn {
+  align-self: flex-start;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-item {
+  padding: 1rem 1.1rem;
+  border: 1px solid $light-border;
+  border-left: 3px solid $accent-color;
+  border-radius: 0 16px 16px 0;
+  background: #fff;
+}
+
+.timeline-meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $accent-color;
+}
+
+.timeline-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.timeline-item p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-band {
+  padding: 1.5rem;
+  border: 1px solid $light-border;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba($accent-color, 0.04), rgba($accent-color, 0.01));
+}
 
 /* Buttons */
 .btn {
-  border-radius: 5px;
-  padding: 0.75em 1.25em;
+  border-radius: 999px;
+  padding: 0.8em 1.2em;
   font-size: 0.9em;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
   border: none;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   text-align: center;
-  min-width: 120px;
 }
 
 .btn--primary {
   background-color: $accent-color;
   color: #fff;
-  &:hover {
+}
+
+.btn--primary:hover {
   background-color: $accent-color-hover;
   color: #fff;
-  transform: translateY(-3px); /* Increased lift */
-  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Add a 'glow' shadow */
-}
-}
-/* In _sass/_custom.scss */
-
-/* =============================================================================
-   5. Responsive Design
-   ========================================================================== */
-
-@media (max-width: 768px) {
-  .project-item-alternating {
-    flex-direction: column !important; // Stack items vertically
-
-    .project-image, .project-details {
-      flex-basis: 100%; // Both take full width
-    }
-  }
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
 }
 
-/* Adds a consistent, subtle border to all project/experience images */
-.project-item-alternating .project-image img {
+.btn--ghost {
+  background: transparent;
+  color: $warm-dark-grey;
   border: 1px solid $light-border;
 }
 
-/* --- 3. Page Section Styles --- */
-/* In _sass/_custom.scss */
+.btn--ghost:hover {
+  background: rgba($accent-color, 0.08);
+  border-color: $accent-color;
+  color: $accent-color;
+}
 
-/* Skills Section */
-/* --- Skills Section V2: Animated Bars --- */
+@media (max-width: 960px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__content {
+    padding: 1.5rem 1.1rem;
+  }
+
+  .hero-block h1 {
+    font-size: 2.4rem;
+  }
+}
