@@ -1,23 +1,19 @@
+tagline: "Electrical & Computer Engineering M.S. Student | Machine Learning Researcher"
+description: >-
+  Personal portfolio featuring selected projects, research, and writing in machine learning, data science, and applied AI.
+  Built with Jekyll for a clean, modern, and easy-to-scan presentation.
+baseurl: ""
+url: "https://alejandresam.github.io"
+repository: "alejandresam/alejandresam.github.io"
+timezone: America/Los_Angeles
 
+title: "./run_samy"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
-tagline: "Electrical & Computer Engineering M.S. Student | Machine Learning Researcher" # Consistent with your about page
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal portfolio showcasing projects, research, interests, and insights in Machine Learning, Data Science, and Artificial Intelligence.
-  Built with Jekyll and customized for a clean, modern academic/personal look.
-baseurl: "" # the subpath of your site, e.g., /blog
-url: "https://alejandresam.github.io" # the base hostname & protocol for your site, e.g., http://example.com
-repository: "alejandresam/alejandresam.github.io" # Your GitHub username/repo name
-timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-# Theme configuration (Minimal Mistakes specific)
-title: "./run_samy" #minimal_mistakes_skin: "air" # Attempting to use the Minimal Mistakes "mint" skin
-remote_theme: "mmistakes/minimal-mistakes@4.26.2" # Use the remote theme for GitHub Pages compatibility
-
-# Site Author Information
 author:
   name: "Samantha Alejandre"
-  avatar: "/assets/images/Samantha_headshot.jpg" # Ensure this path is correct and image exists!
-  bio: "Electrical & Computer Engineering M.S. Student and Researcher at UCLA. Interested in Machine Learning, Data Science, and AI."
+  avatar: "/assets/images/Samantha_headshot.jpg"
+  bio: "Electrical & Computer Engineering M.S. student and researcher at UCLA focused on machine learning, data science, and applied AI."
   location: "Los Angeles, CA"
   links:
     - label: "Email"
@@ -29,43 +25,25 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/samanthaalejandre"
-    
-  quote: "The first principle is that you must not fool yourself — and you are the easiest person to fool."
-  quote_author: "Richard Feynman"
 
-
-
-# Build settings
 markdown: kramdown
 sass:
   load_paths:
-    - _sass 
+    - _sass
     - assets/css
-    # Custom Sass directory for your styles
-    
-  # Use compressed style for production to reduce file size 
 
 highlighter: rouge
 permalink: /:categories/:title/
-#paginate: 5 # number of posts to show per page
-#paginate_path: /page:num/
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-remote-theme # Required for remote_theme on GitHub Pages
-  - jekyll-seo-tag # For better SEO (search engine optimization)
-  - jekyll-last-modified-at # New plugin for displaying last modified date on posts/pages
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-last-modified-at
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be re-enabled by adding them to the `include:` list of the
-# configuration file.
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -77,6 +55,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-
-# Defaults
-# These are crucial for applying layouts and other settings automatically to your content.
